@@ -36,20 +36,21 @@ function Home() {
           <div className="grid">
             <div className="col">
                 <strong>Parlour</strong>
-                <p>Blossoms Academy</p>
+                <p>CUT STDIO</p>
             </div>
             <div className="col">
                 <strong>Email</strong>
-                <p>blossoms@gmail.com</p>
+                <p>cutstdio@gmail.com</p>
             </div> 
             <div className="col">
                 <strong>Mobile</strong>
-                <p>+91 8897666511</p>
+                <p>+91 80018 18888</p>
             </div> 
             <div className="col">
                 <strong>Address</strong>
-                <p>322, Long Fly,</p>
-                <p>997773 India</p>
+                <p>Door No 57</p>
+                <p>Moulana Azad Road</p>
+                <p>Phoenix Bay, Port Blair - 744101</p>
             </div> 
             <div className="col">
                 <strong>Services</strong>

@@ -35,13 +35,10 @@ function Contact() {
             </p>
             <div>
               <p>
-                <strong>Address:</strong> 33, Flyover Road,
+                <strong>Address:</strong> Door No 57 Moulana Azad Road, Phoenix Bay, Port Blair - 744101
               </p>
               <p>
-                <strong>Email:</strong> blossoms@gmail.com
-              </p>
-              <p>
-                <strong>Website:</strong> www.blossoms.com
+                <strong>Email:</strong>  cutstdio@gmail.com
               </p>
             </div>
           </div>
