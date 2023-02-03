@@ -1,42 +1,44 @@
 import React, { useState } from 'react';
-import styled from "styled-components";
-import logo from "assets/cut.png";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
-import { useScroll } from "components/useScroll";
-import { motion } from "framer-motion";
-import { navAnimation } from "animation";
-
+import styled from 'styled-components';
+import logo from 'assets/cut.png';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdClose } from 'react-icons/md';
+import { useScroll } from 'components/useScroll';
+import { motion } from 'framer-motion';
+import { navAnimation } from 'animation';
 
 function Navbar() {
-  const [isNavOpen,setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [element, controls] = useScroll();
-  return <Nav ref={element}
-  variants={navAnimation}
-  transition={{ delay: 0.1 }}
-  animate={controls} 
-  state={isNavOpen ? 1 : 0}
-  >
-    <div className="brand__container">
-    <a href="#" className='brand'>
-        <img src={logo} alt="logo" />
-      </a>
-      <div className="toggle">
-        {isNavOpen ? (
-          <MdClose onClick={ () => setIsNavOpen(false)} />
-        ) : (
-          <GiHamburgerMenu
-            onClick={ (e) => {
-              e.stopPropagation();
-              setIsNavOpen(true);
-            }}
+  return (
+    <Nav
+      ref={element}
+      variants={navAnimation}
+      transition={{ delay: 0.1 }}
+      animate={controls}
+      state={isNavOpen ? 1 : 0}
+    >
+      <div className="brand__container">
+        <a href="#" className="brand">
+          <img src={logo} alt="logo" />
+        </a>
+        <div className="toggle">
+          {isNavOpen ? (
+            <MdClose onClick={() => setIsNavOpen(false)} />
+          ) : (
+            <GiHamburgerMenu
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsNavOpen(true);
+              }}
+              
             />
-        )}
+          )}
+        </div>
       </div>
-    </div>
-    <div className={`links ${isNavOpen ? "show" : ""}`}>
-    <ul>
-        <li className="active">
+      <div className={`links ${isNavOpen ? 'show' : ''}`}>
+        <ul>
+          <li className="active">
             <a href="#home">Home</a>
           </li>
           <li>
@@ -55,8 +57,9 @@ function Navbar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-    </div>
-  </Nav>
+      </div>
+    </Nav>
+  );
 }
 
 const Nav = styled(motion.nav)`
@@ -76,7 +79,7 @@ const Nav = styled(motion.nav)`
       list-style-type: none;
       display: flex;
       gap: 3rem;
-      .active{
+      .active {
         a {
           border-bottom: 0.2rem solid var(--secondary-color);
         }
@@ -86,7 +89,7 @@ const Nav = styled(motion.nav)`
           color: #fff;
           text-decoration: none;
           font-weight: 400;
-          font-size: 0.9rem;
+          font-size: rem;
           text-transform: uppercase;
         }
       }
@@ -115,7 +118,7 @@ const Nav = styled(motion.nav)`
       overflow-x: hidden;
       top: 0;
       right: 0;
-      width: ${({ state }) => (state ? "100%" : "0%")};
+      width: ${({ state }) => (state ? '100%' : '0%')};
       height: 100vh;
       background-color: var(--secondary-color);
       opacity: 0;

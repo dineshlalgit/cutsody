@@ -67,7 +67,7 @@ min-height: 100vh;
     }
     h2 {
       font-size: 2rem;
-      color: var(--secondary-color);
+      color: black;
     }
   }
   &__data {

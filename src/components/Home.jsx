@@ -16,7 +16,7 @@ function Home() {
       >
         <div className="content">
           <div className="title">
-            <h1>CUT STDIO</h1>
+            <h1>CUT STuDIO</h1>
           </div>  
           <div className="subTitle">
             <p>
@@ -33,10 +33,10 @@ function Home() {
       variants={homeInfoAnimation}  
       transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
       >
-          <div className="grid">
+          <div className="grid text-slate-800">
             <div className="col">
                 <strong>Parlour</strong>
-                <p>CUT STDIO</p>
+                <p>CUT STuDIO</p>
             </div>
             <div className="col">
                 <strong>Email</strong>
@@ -108,7 +108,7 @@ const Section = styled.section`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 4rem;
-      color: #fff;
+      color: black;
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {

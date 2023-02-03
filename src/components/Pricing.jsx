@@ -157,7 +157,7 @@ overflow: hidden;
 .pricing__title {
   margin: 6rem 10rem;
   p {
-    color: var(--secondary-color);
+    color: black;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
   }
@@ -178,12 +178,12 @@ overflow: hidden;
     &:nth-child(2) {
       .pricing__plan__content {
         padding: 0 5rem;
-        border-left: 0.2rem solid var(--primary-color);
-        border-right: 0.2rem solid var(--primary-color);
+        border-left: 0.2rem gold;
+        border-right: 0.2rem gold;
       }
     }
     &__name {
-      background-color: var(--primary-color);
+      background-color: black;
       width: 15rem;
       height: 15rem;
       border-radius: 10rem;
@@ -216,7 +216,7 @@ overflow: hidden;
       &__features {
         list-style-type: none;
         text-align: center;
-        color: var(--primary-color);
+        color: black;
         display: flex;
         flex-direction: column;
         gap: 0.6rem;

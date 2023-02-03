@@ -86,7 +86,7 @@ position: relative;
       }
     }
     .type {
-      color: var(--primary-color);
+      color: black;
       font-weight: bolder;
       text-transform: uppercase;
     }
@@ -102,7 +102,7 @@ position: relative;
       span {
         letter-spacing: 0.1rem;
         text-transform: uppercase;
-        color: var(--primary-color);
+        color: black;
       }
     }
   }
