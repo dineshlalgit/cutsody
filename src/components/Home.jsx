@@ -82,7 +82,7 @@ const Section = styled.section`
       width: 60%;
       color: #fff;
       gap: 1.2rem;
-      margin-top: 8rem;
+      margin-top: 2rem;
       padding-left: 18rem;
       .title {
         h1 {
@@ -92,7 +92,7 @@ const Section = styled.section`
       }
       .subTitle {
         p {
-          width: 70%;
+          width: 80%;
           margin-bottom: 2rem;
         }
       }
