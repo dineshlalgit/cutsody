@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import logo from "assets/cutstdio.png";
+import logo from "assets/cut.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useScroll } from "components/useScroll";
@@ -18,9 +18,9 @@ function Navbar() {
   state={isNavOpen ? 1 : 0}
   >
     <div className="brand__container">
-      <a href="#" className='brand'>
+    <a href="#" className='brand'>
         <img src={logo} alt="logo" />
-      </a>  
+      </a>
       <div className="toggle">
         {isNavOpen ? (
           <MdClose onClick={ () => setIsNavOpen(false)} />
