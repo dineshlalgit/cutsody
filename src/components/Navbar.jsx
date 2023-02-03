@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import logo from "assets/logo.png";
+import logo from "assets/cutstdio.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useScroll } from "components/useScroll";
