@@ -107,7 +107,7 @@ background-color: var(--secondary-color);
   gap: 1rem;
   margin: 4rem 0;
   span {
-    color: black;
+    color: #fff;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }

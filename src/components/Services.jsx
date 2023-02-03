@@ -79,7 +79,7 @@ min-height: 100vh;
         }
       }
       .services__service__description {
-        color: violet;
+        color: #fff;
       }
     }
     &__image {
@@ -98,8 +98,7 @@ min-height: 100vh;
       }
     }
     &__description {
-      font-weight: bold;
-      color: black;
+      color: var(--primary-color);
       margin-bottom: 2rem;
     }
   }
