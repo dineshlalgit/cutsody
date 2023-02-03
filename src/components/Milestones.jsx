@@ -27,7 +27,7 @@ function Milestones() {
     {
       image: milestone3,
       data: "Reviews",
-      amount: "5.4K",
+      amount: "1.2K+",
     },
 ]
   return <Section ref={element}>

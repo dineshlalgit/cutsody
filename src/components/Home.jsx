@@ -36,11 +36,11 @@ function Home() {
           <div className="grid text-slate-800">
             <div className="col">
                 <strong>Parlour</strong>
-                <p>CUT STuDIO</p>
+                <p>CUT STUDIO</p>
             </div>
             <div className="col">
                 <strong>Email</strong>
-                <p>cutstdio@gmail.com</p>
+                <p>cutstudio@gmail.com</p>
             </div> 
             <div className="col">
                 <strong>Mobile</strong>
@@ -54,13 +54,14 @@ function Home() {
             </div> 
             <div className="col">
                 <strong>Services</strong>
-                <p>Sparking</p>
-                <p>SPA Cream</p>
+                <p>Hair Cut</p>
+                <p>SPA</p>
+                <p>Facial</p>
             </div> 
             <div className="col">
                 <strong>Working Hours</strong>
-                <p>Monday to Friday</p>
-                <p>08:00 to 09:00</p>
+                <p>Monday to Sunday</p>
+                <p>08:00 AM to 09:00 PM</p>
             </div>   
           </div>
       </motion.div>

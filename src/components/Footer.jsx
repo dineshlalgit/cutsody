@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { BsFacebook, BsTwitter, BsYoutube, BsBehance } from 'react-icons/bs';
+import { BsFacebook, BsTwitter, BsYoutube, BsBehance, BsInstagram } from 'react-icons/bs';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { footerTextAnimation } from "animation";
@@ -18,7 +18,7 @@ function Footer() {
         duration: 0.8,
       }}
       >
-        &copy; CUT STDIO
+        &copy; CUT STUDIO
       </motion.span>
       <motion.div className="footer__social__icons"
       variants={footerTextAnimation}
@@ -32,7 +32,7 @@ function Footer() {
         <BsFacebook />
         <BsTwitter />
         <BsYoutube />
-        <BsBehance />
+        <BsInstagram />
       </motion.div>
     </Foot>
   )
