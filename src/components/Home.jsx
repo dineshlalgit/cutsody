@@ -16,7 +16,7 @@ function Home() {
       >
         <div className="content">
           <div className="title">
-            <h1>Blossoms Parlour</h1>
+            <h1>CUT STDIO</h1>
           </div>  
           <div className="subTitle">
             <p>
