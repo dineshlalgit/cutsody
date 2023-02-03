@@ -83,7 +83,7 @@ const Section = styled.section`
       width: 60%;
       color: #fff;
       gap: 1.2rem;
-      margin-top: 8rem;
+      margin-top: 0rem;
       padding-left: 18rem;
       .title {
         h1 {
