@@ -16,7 +16,7 @@ function Home() {
       >
         <div className="content">
           <div className="title">
-            <h1>CUT STuDIO</h1>
+            <h1>CUT STUDIO</h1>
           </div>  
           <div className="subTitle">
             <p>
@@ -33,7 +33,7 @@ function Home() {
       variants={homeInfoAnimation}  
       transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
       >
-          <div className="grid text-slate-800">
+          <div className="grid">
             <div className="col">
                 <strong>Parlour</strong>
                 <p>CUT STUDIO</p>
@@ -83,7 +83,7 @@ const Section = styled.section`
       width: 60%;
       color: #fff;
       gap: 1.2rem;
-      margin-top: 2rem;
+      margin-top: 8rem;
       padding-left: 18rem;
       .title {
         h1 {
@@ -93,7 +93,7 @@ const Section = styled.section`
       }
       .subTitle {
         p {
-          width: 80%;
+          width: 70%;
           margin-bottom: 2rem;
         }
       }
@@ -109,7 +109,7 @@ const Section = styled.section`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 4rem;
-      color: black;
+      color: #fff;
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {

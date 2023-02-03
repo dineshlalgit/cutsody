@@ -27,35 +27,35 @@ function Pricing() {
 
   const data = [
     {
-      value: "Full face Rs.250",
+      value: "Full face ₹.250",
       type: "Basic",
     },
     {
-      value: "Cheeks Rs. 90",
+      value: "Cheeks ₹. 90",
       type: "Basic",
     },
     {
-      value: "Jawline Rs.50",
+      value: "Jawline ₹.50",
       type: "Basic",
     },
     {
-      value: "Lower Lip Rs.50",
+      value: "Lower Lip ₹.50",
       type: "Basic",
     },
     {
-      value: "Upper Lip Rs.50",
+      value: "Upper Lip ₹.50",
       type: "Basic",
     },
     {
-      value: "Under arms Rs.100",
+      value: "Under arms ₹.100",
       type: "Basic",
     },
     {
-      value: "Full Legs Rs.450",
+      value: "Full Legs ₹.450",
       type: "Pro",
     },
     {
-      value: "Half Legs Rs.300",
+      value: "Half Legs ₹.300",
       type: "Pro",
     },
     {
@@ -95,7 +95,7 @@ function Pricing() {
               <div className="pricing__plan__name">
                 <h2>{name}</h2>
                 <div className="pricing__plan__name__price">
-                  <span>$</span>
+                  <span>₹</span>
                   <p>{price}</p>
                 </div>
               </div>
