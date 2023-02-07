@@ -29,10 +29,10 @@ function Footer() {
         duration: 0.8,
       }}  
       >
-        <BsFacebook />
-        <BsTwitter />
-        <BsYoutube />
-        <BsInstagram />
+        <a href="https://www.facebook.com/cutstudioandaman" target="_blank" rel='noreferrer'><BsFacebook /></a>
+        <a href="https://www.facebook.com/cutstudioandaman" target="_blank" rel='noreferrer'><BsTwitter /></a>
+        <a href="https://www.facebook.com/cutstudioandaman" target="_blank" rel='noreferrer'><BsYoutube /></a>
+        <a href="https://www.facebook.com/cutstudioandaman" target="_blank" rel='noreferrer'><BsInstagram /></a>
       </motion.div>
     </Foot>
   )

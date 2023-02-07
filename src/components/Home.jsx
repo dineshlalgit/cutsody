@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/home.png";
+import home from "assets/home2.png";
 import play from "assets/play.png";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ function Home() {
               At the Beauty Parlour, we believe in beauty with a conscience. 
               We have created a salon that offers the highest quality hair 
               services.
-            </p>  
+            </p>
           </div>
           <img src={play} alt="Play Button" />
         </div>  
@@ -83,7 +83,7 @@ const Section = styled.section`
       width: 60%;
       color: #fff;
       gap: 1.2rem;
-      margin-top: 0rem;
+      margin-top: 5rem;
       padding-left: 18rem;
       .title {
         h1 {
