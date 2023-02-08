@@ -17,6 +17,7 @@ function Home() {
         <div className="content">
           <div className="title">
             <h1>CUT STUDIO</h1>
+            
           </div>  
           <div className="subTitle">
             <p>
@@ -25,7 +26,7 @@ function Home() {
               services.
             </p>
           </div>
-          <img src={play} alt="Play Button" />
+          <img src={play} alt="Play Button"  />
         </div>  
       </motion.div>
 
@@ -62,7 +63,8 @@ function Home() {
                 <strong>Working Hours</strong>
                 <p>Monday to Sunday</p>
                 <p>08:00 AM to 09:00 PM</p>
-            </div>   
+            </div> 
+              
           </div>
       </motion.div>
     </Section>
