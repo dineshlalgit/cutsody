@@ -20,7 +20,7 @@ function App() {
       <Services />
       <Portfolio />
       <Milestones />
-      <Blog />
+      {/* <Blog /> */}
       <Video />
       <Pricing />
       <Testimonials />

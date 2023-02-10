@@ -47,9 +47,9 @@ function Navbar() {
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#blog">Blog</a>
-          </li>
+          </li> */}
           <li>
             <a href="#skills">Skills</a>
           </li>
@@ -72,7 +72,7 @@ const Nav = styled(motion.nav)`
   color: #fff;
   padding-top: 2rem;
   .brand__container {
-    margin: 0 2rem;
+    margin: 0 1rem;
     .toggle {
       display: none;
     }
