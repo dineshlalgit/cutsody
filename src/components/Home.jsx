@@ -27,7 +27,7 @@ function Home() {
             </p>
           </div>
           <img src={play} alt="Play Button"  />
-        </div>  
+          </div>  
       </motion.div>
 
       <motion.div className="info"
@@ -64,6 +64,7 @@ function Home() {
                 <p>Monday to Sunday</p>
                 <p>08:00 AM to 09:00 PM</p>
             </div> 
+            
               
           </div>
       </motion.div>

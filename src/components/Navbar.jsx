@@ -36,8 +36,8 @@ function Navbar() {
           )}
         </div>
       </div>
-      <div className={`links ${isNavOpen ? 'show' : ''}`}>
-        <ul>
+      <div className={`links ${isNavOpen ? 'show' : ''}`} >
+        <ul >
           <li className="active">
             <a href="#home">Home</a>
           </li>
@@ -55,6 +55,9 @@ function Navbar() {
           </li>
           <li>
             <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="https://calendly.com/cutstudio/cutstudio-appointment">Appointment</a>
           </li>
         </ul>
       </div>
