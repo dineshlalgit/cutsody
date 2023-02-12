@@ -2,8 +2,6 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import Title from './Title';
 import pricing1 from '../assets/pricing1.png';
-import pricing2 from '../assets/pricing2.png';
-import play from '../assets/play.png';
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
 import { pricingAnimation } from 'animation';
@@ -12,63 +10,363 @@ const Womens = () => {
   const [element, controls] = useScroll();
   const plans = [
     {
-      name: 'Basic',
-      price: 13,
+      category: 'Cut & Colour',
+      name: 'Cuts',
     },
     {
-      name: 'Pro',
-      price: 35,
+      category: 'Cut & Colour',
+      name: 'Colour',
     },
     {
-      name: 'Expert',
-      price: 77,
+      category: 'Healthy Hair',
+      name: 'Hair Spa',
     },
     {
+      category: 'Healthy Hair',
+      name: 'Hair Care',
+    },
+    {
+      category: 'Healthy Hair',
+      name: 'Hair Massage',
+    },
+    {
+      category: 'Facial',
+      name: 'Essential Facial',
+    },
+    {
+      category: 'Facial',
+      name: 'Luxury Facial',
+    },
+    {
+      category: 'Manicure/Pedicure',
       name: 'Premium',
-      price: 109,
+    },
+    {
+      category: 'Manicure/Pedicure',
+      name: 'Regular',
+    },
+    {
+      category: 'Reflexology',
+      name: 'Reflexology',
+    },
+    {
+      category: 'Body Care',
+      name: 'Body Care',
+    },
+    {
+      category: 'BrideGroom',
+      name: 'Instant Package',
+    },
+    {
+      category: 'BrideGroom',
+      name: 'Premium Package',
+    },
+    {
+      category: 'BrideGroom',
+      name: 'Makeup & Hairstyle',
     },
   ];
 
   const data = [
     {
-      value: 'Full face ₹.250',
-      type: 'Basic',
+      value: 'Hair Cut ~ Cut for Every Lifestyle',
+      type: 'Cuts',
     },
     {
-      value: 'Cheeks ₹. 90',
-      type: 'Basic',
+      value: 'Hair Cut ~ Change of Style',
+      type: 'Cuts',
     },
     {
-      value: 'Jawline ₹.50',
-      type: 'Basic',
+      value: 'Hair Cut Executive',
+      type: 'Cuts',
     },
     {
-      value: 'Lower Lip ₹.50',
-      type: 'Basic',
+      value: 'Hair Wash & Basic Blow Dry',
+      type: 'Cuts',
     },
     {
-      value: 'Upper Lip ₹.50',
-      type: 'Basic',
+      value: 'Shave ~ As Smooth As Possible',
+      type: 'Cuts',
     },
     {
-      value: 'Under arms ₹.100',
-      type: 'Basic',
+      value: 'Beard Designing ~ Look cool! Flaunt differently',
+      type: 'Cuts',
     },
     {
-      value: 'Full Legs ₹.450',
-      type: 'Pro',
+      value: 'Kids Cut ~ Below 5 Yrs',
+      type: 'Cuts',
     },
     {
-      value: 'Half Legs ₹.300',
-      type: 'Pro',
+      value: 'Head Shave',
+      type: 'Cuts',
     },
     {
-      value: 'Daily Backups',
-      type: 'Expert',
+      value: 'Grey Coverage ~ Ammonia/Ammonia free',
+      type: 'Colour',
     },
     {
-      value: 'One Click Setup',
-      type: 'Expert',
+      value: 'Fashion Hair Colour ~ Ammonia/Ammonia free',
+      type: 'Colour',
+    },
+    {
+      value: 'Streaking ~ Per Streak',
+      type: 'Colour',
+    },
+    {
+      value: 'Beard Colouring',
+      type: 'Colour',
+    },
+    {
+      value: 'Moustache Colouring',
+      type: 'Colour',
+    },
+    {
+      value: 'Revitalizing ~ Dry & Frizzy Hair',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Healthy Hair Spa ~ Damaged Hair',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Colour Shine Spa ~ Colored Hair',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Hair Fiber Treatment',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Anti Dandruff',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Anti Hairfall',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Smoothing',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Straightening',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Keratin',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Kerafusion',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Aroma Oil Massage ~ 30 mins',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Almond Oil Massage ~ 30 mins',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Olive Oil Massage ~ 30 mins',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Reflection Oil Massage ~ 30 mins',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Oxy Glow Beach ',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'De Tan',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Regular Clean Up',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Under Eye',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Regular Clean (Acne)',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Fruit Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Aroma Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Insta Fair Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Pearl Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Shahnaz Gold Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'Shahnaz Diamond Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'Skin Whitening Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'Skin Lightening Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'O3+ Radiant & GLowing Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'ICECREAM - Regular',
+      type: 'Premium',
+    },
+    {
+      value: 'ICECREAM - Premium',
+      type: 'Premium',
+    },
+    {
+      value: 'ICECREAM - Signature',
+      type: 'Premium',
+    },
+    {
+      value: 'Regular',
+      type: 'Regular',
+    },
+    {
+      value: 'Aroma',
+      type: 'Regular',
+    },
+    {
+      value: 'Chocolate',
+      type: 'Regular',
+    },
+    {
+      value: 'Crystal',
+      type: 'Regular',
+    },
+    {
+      value: 'Pedilogix',
+      type: 'Regular',
+    },
+    {
+      value: 'Foot Reflexology',
+      type: 'Reflexology',
+    },
+    {
+      value: 'Hand Reflexology',
+      type: 'Reflexology',
+    },
+    {
+      value: 'Neck & Back Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Aroma Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Swedish Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Coco Butter Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Body Exfoliation & Pack',
+      type: 'Body Care',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Body Care',
+    },
+    {
+      value: 'Hair Cut',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Hair Spa',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Shave Bleach ~ Face & Neck',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Skin Whitening Facial',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Manicure',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Pedicure',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Body Massage',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Hair Cut',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Hair Spa',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Shave',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Bleach ~ Face & Neck',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Skin Lightening Facial',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Body Polish Treatment',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Manicure',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Pedicure',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Krylon',
+      type: 'Makeup & Hairstyle',
+    },
+    {
+      value: 'MAC',
+      type: 'Makeup & Hairstyle',
+    },
+    {
+      value: 'Bridal Makeup Outdoor',
+      type: 'Makeup & Hairstyle',
     },
   ];
 
@@ -77,14 +375,13 @@ const Womens = () => {
       <Title value="Women's" />
       <div className="background">
         <img src={pricing1} alt="background" className="bg1" />
-        <img src={pricing2} alt="background" className="bg2" />
       </div>
       <div className="pricing__title">
         <p>Find your pricing plan</p>
         <h2>Finding the best salons in your city could be time consuming..</h2>
       </div>
       <div className="pricing">
-        {plans.map(({ name, price }, index) => {
+        {plans.map(({ name, category, price }, index) => {
           return (
             <motion.div
               className="pricing__plan"
@@ -98,40 +395,105 @@ const Womens = () => {
               }}
             >
               <div className="pricing__plan__name">
-                <h2>{name}</h2>
-                <div className="pricing__plan__name__price">
-                  <span>₹</span>
-                  <p>{price}</p>
-                </div>
+                <h2 className='text-2xl mb-10 font-mono'>{category}</h2>
+                <h3 className='text-white font-serif'>{name}</h3>
               </div>
-              <div className="pricing__plan__content">
+              <div className="pricing__plan__content mb-14">
                 <ul className={`pricing__plan__content__features ${name}`}>
                   {data.map(({ value, type }, index2) => {
                     return (
                       <Fragment key={index2}>
-                        {name === 'Basic' ? (
+                        { 
+                        name === 'Cuts' ? (
                           type === name ? (
-                            <li>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
                           ) : (
-                            <li className="line">{value}</li>
+                            <li></li>
                           )
-                        ) : name === 'Pro' ? (
-                          type === 'Basic' || type === name ? (
-                            <li>{value}</li>
+                        ) : name === 'Colour' ? (
+                          type === 'Colour' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
                           ) : (
-                            <li className="line">{value}</li>
+                            <li></li>
                           )
-                        ) : (
-                          name === 'Expert' && <li>{value}</li>
-                        )}
+                        ) : name === 'Hair Spa' ? (
+                          type === 'Hair Spa' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Hair Care' ? (
+                          type === 'Hair Care' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Hair Massage' ? (
+                          type === 'Hair Massage' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Essential Facial' ? (
+                          type === 'Essential Facial' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Luxury Facial' ? (
+                          type === 'Luxury Facial' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Premium' ? (
+                          type === 'Premium' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Regular' ? (
+                          type === 'Regular' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Reflexology' ? (
+                          type === 'Reflexology' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Body Care' ? (
+                          type === 'Body Care' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Instant Package' ? (
+                          type === 'Instant Package' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Premium Package' ? (
+                          type === 'Premium Package' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Makeup & Hairstyle' ? (
+                          type === 'Makeup & Hairstyle' ? (
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Something'
+                  }
                       </Fragment>
                     );
                   })}
                 </ul>
-                <div className="pricing__plan__content__actions">
-                  <span>Order Now</span>
-                  <img src={play} alt="Order Now" />
-                </div>
               </div>
             </motion.div>
           );
@@ -143,7 +505,7 @@ const Womens = () => {
 
 const Section = styled.section`
   min-height: 100vh;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   position: relative;
   overflow: hidden;
   .background {
@@ -153,16 +515,11 @@ const Section = styled.section`
       left: -5%;
       z-index: -1;
     }
-    .bg2 {
-      position: absolute;
-      right: 0;
-      bottom: 5rem;
-    }
   }
   .pricing__title {
-    margin: 6rem 10rem;
+    margin: 5rem 10rem;
     p {
-      color: black;
+      color: #dc1c1c;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
     }
@@ -182,7 +539,7 @@ const Section = styled.section`
       gap: 2rem;
       &:nth-child(2) {
         .pricing__plan__content {
-          padding: 0 5rem;
+          padding: 0rem;
           border-left: 0.2rem gold;
           border-right: 0.2rem gold;
         }
@@ -197,22 +554,16 @@ const Section = styled.section`
         align-items: center;
         flex-direction: column;
         color: var(--secondary-color);
-        h2 {
-          font-size: 2rem;
-          line-height: 1.3rem;
+        h3 {
+          font-size: 1.4rem;
+          line-height: 2rem;
         }
         &__price {
-          color: #fff;
+          color: #dc3333;
           display: flex;
           position: relative;
-          span {
-            position: absolute;
-            top: 1rem;
-            left: -0.9rem;
-            font-size: 1.3rem;
-          }
           p {
-            font-size: 4rem;
+            font-size: 0rem;
             font-weight: bold;
           }
         }
@@ -221,14 +572,13 @@ const Section = styled.section`
         &__features {
           list-style-type: none;
           text-align: center;
-          color: black;
+          font-weight: 500;
+          color: gold;
           display: flex;
           flex-direction: column;
-          gap: 0.6rem;
           .line {
             text-decoration: line-through;
           }
-          margin-bottom: 2rem;
         }
         &__actions {
           display: flex;
@@ -244,11 +594,12 @@ const Section = styled.section`
       }
     }
   }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     padding: 1rem;
     background-color: var(--secondary-color);
     .pricing__title {
-      margin: 0;
+      margin: 1rem;
       padding: 0 2rem;
       text-align: center;
       h2 {
@@ -260,23 +611,32 @@ const Section = styled.section`
     }
     .pricing {
       grid-template-columns: 1fr;
-      padding: 1rem;
-      gap: 4rem;
+      padding: 1.5rem;
+      gap: -100rem;
       &__plan {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1.3rem;
         &__name {
-          height: 10rem;
-          width: 10rem;
+          height: 12rem;
+          width: 12rem;
           h2 {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
+            color: gold;
+          }
+          h3 {
+            font-size: 1.3rem;
           }
           &__price {
             p {
-              font-size: 3rem;
+              font-size: 1rem;
             }
+          }
+        }
+        &__content {
+          &__features {
+            color: white;
           }
         }
         &:nth-child(2) {
