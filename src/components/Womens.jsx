@@ -4,11 +4,11 @@ import Title from './Title';
 import pricing1 from '../assets/pricing1.png';
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
-import { pricingAnimation } from 'animation';
+import { pricingAnimation2 } from 'animation';
 
 const Womens = () => {
   const [element, controls] = useScroll();
-  const plans = [
+  const plans1 = [
     {
       category: 'Cut & Style',
       name: 'Cuts',
@@ -107,7 +107,7 @@ const Womens = () => {
     },
   ];
 
-  const data = [
+  const data1 = [
     {
       value: 'Hair Trim ~ Basic',
       type: 'Cuts',
@@ -803,12 +803,12 @@ const Womens = () => {
         </h4>
       </div>
       <div className="pricing">
-        {plans.map(({ name, category, price }, index) => {
+        {plans1.map(({ name, category, price }, index) => {
           return (
             <motion.div
               className="pricing__plan"
               key={index}
-              variants={pricingAnimation}
+              variants={pricingAnimation2}
               animate={controls}
               transition={{
                 delay: 0.03,
@@ -822,7 +822,7 @@ const Womens = () => {
               </div>
               <div className="pricing__plan__content mb-14">
                 <ul className={`pricing__plan__content__features ${name}`}>
-                  {data.map(({ value, type }, index2) => {
+                  {data1.map(({ value, type }, index2) => {
                     return (
                       <Fragment key={index2}>
                         {name === 'Cuts' ? (
@@ -1051,7 +1051,7 @@ const Womens = () => {
 
 const Section = styled.section`
   min-height: 100vh;
-  padding: 5rem 1rem;
+  padding: 3rem 0.5rem;
   position: relative;
   overflow: hidden;
   .background {
@@ -1063,7 +1063,7 @@ const Section = styled.section`
     }
   }
   .pricing__title {
-    margin: 5rem 10rem;
+    margin: 5rem 13rem;
     p {
       color: #dc1c1c;
       text-transform: uppercase;

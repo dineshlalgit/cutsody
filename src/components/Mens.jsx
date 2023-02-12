@@ -4,7 +4,7 @@ import Title from './Title';
 import pricing1 from '../assets/pricing1.png';
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
-import { pricingAnimation } from 'animation';
+import { pricingAnimation1 } from 'animation';
 
 const Womens = () => {
   const [element, controls] = useScroll();
@@ -387,7 +387,7 @@ const Womens = () => {
             <motion.div
               className="pricing__plan"
               key={index}
-              variants={pricingAnimation}
+              variants={pricingAnimation1}
               animate={controls}
               transition={{
                 delay: 0.03,

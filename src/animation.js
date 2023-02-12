@@ -38,9 +38,14 @@ export const videoAnimations = {
     show: { scale: 1, opacity: 1 },
 };
 
-export const pricingAnimation = {
+export const pricingAnimation1 = {
     hidden: { y: 200, opacity: 0 },
     show: { y: 0, opacity: 1 },
+};
+
+export const pricingAnimation2 = {
+    show: { y: 0, opacity: 1 },
+    hidden: { y: 200, opacity: 0 },
 };
 
 export const testimonialsAnimations = {

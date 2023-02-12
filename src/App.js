@@ -1,39 +1,42 @@
-// import Blog from 'components/Blog';
-import Contact from 'components/Contact';
-import Footer from 'components/Footer';
-import Home from 'components/Home';
-import Milestones from 'components/Milestones';
-import Portfolio from 'components/Portfolio';
-import Mens from 'components/Mens'
-import Womens from 'components/Womens'
-// import Pricing from 'components/Pricing';
-import ScrollToTop from 'components/ScrollToTop';
-import Services from 'components/Services';
-import Skills from 'components/Skills';
-import Testimonials from 'components/Testimonials';
-import Video from 'components/Video';
+import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
-import React from 'react';
+
+// import Blog from 'components/Blog';
+// import Pricing from 'components/Pricing';
+const Contact = lazy(() => import('components/Contact'));
+const Footer = lazy(() => import('components/Footer'));
+const Home = lazy(() => import('components/Home'));
+const Milestones = lazy(() => import('components/Milestones'));
+const Portfolio = lazy(() => import('components/Portfolio'));
+const Mens = lazy(() => import('components/Mens'));
+const Womens = lazy(() => import('components/Womens'));
+const ScrollToTop = lazy(() => import('components/ScrollToTop'));
+const Services = lazy(() => import('components/Services'));
+const Skills = lazy(() => import('components/Skills'));
+const Testimonials = lazy(() => import('components/Testimonials'));
+const Video = lazy(() => import('components/Video'));
 
 function App() {
   return (
     <motion.div initial="hidden" animate="show">
-      <Home />
-      <Services />
-      <Portfolio />
-      <Milestones />
-      {/* <Blog /> */}
-      <Video />
-      <Mens />
-      <Womens />
-      {/* <Pricing /> */}
-      <Testimonials />
-      <Skills />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
+      <Suspense fallback={<h1 className="top-50 text-blue-500">Loading...</h1>}>
+        <Home />
+        <Services />
+        <Portfolio />
+        <Milestones />
+        {/* <Blog /> */}
+        <Video />
+        <Mens />
+        <Womens />
+        {/* <Pricing /> */}
+        <Testimonials />
+        <Skills />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </Suspense>
     </motion.div>
-  )
+  );
 }
 
-export default App
+export default App;

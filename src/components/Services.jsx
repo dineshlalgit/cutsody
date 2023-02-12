@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import service1 from 'assets/men.png';
 import service2 from 'assets/women2.jpg';
 
-import Mens from 'components/Mens';
-import Womens from 'components/Womens';
-
-import play from 'assets/play.png';
 import Title from './Title';
 import { useScroll } from 'components/useScroll';
 import { motion } from 'framer-motion';
