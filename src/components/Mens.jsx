@@ -22,7 +22,7 @@ const Womens = () => {
       price: 35,
     },
     {
-      category: 'Hair Spa & Remedy',
+      category: 'Healthy Hair',
       name: 'Hair Spa',
       price: 77,
     },
@@ -83,12 +83,262 @@ const Womens = () => {
       type: 'Colour',
     },
     {
-      value: 'Daily Backups',
+      value: 'Revitalizing: For Dry & Frizzy Hair',
       type: 'Hair Spa',
     },
     {
-      value: 'One Click Setup',
+      value: 'Healthy Hair spa For Damaged Hair',
       type: 'Hair Spa',
+    },
+    {
+      value: 'COLOUR SHINE SPA For Colored Hair',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'HAIR Fiber Treatment',
+      type: 'Hair Spa',
+    },
+    {
+      value: 'Anti Dandruff',
+      type: 'Hair Remedy',
+    },
+    {
+      value: 'Anti Hairfall',
+      type: 'Hair Remedy',
+    },
+    {
+      value: 'Smoothing',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Straightening',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Keratin',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Kerafusion',
+      type: 'Hair Care',
+    },
+    {
+      value: 'Aroma Oil Massage',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Almond Oil Massage',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Olive Oil Massage',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Reflection Oil Massage',
+      type: 'Hair Massage',
+    },
+    {
+      value: 'Oxy Glow Beach ',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'De Tan',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Regular Clean Up',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Under Eye',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Regular Clean (Acne)',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Fruit Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Aroma Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Insta Fair Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Pearl Facial',
+      type: 'Essential Facial',
+    },
+    {
+      value: 'Shahnaz Gold Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'Shahnaz Diamond Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'Skin Whitening Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'Skin Lightening Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'O3+ Radiant & GLowing Facial',
+      type: 'Luxury Facial',
+    },
+    {
+      value: 'ICECREAM - Regular',
+      type: 'Premium (Manicure/Pedicure)',
+    },
+    {
+      value: 'ICECREAM - Premium',
+      type: 'Premium (Manicure/Pedicure)',
+    },
+    {
+      value: 'ICECREAM - Signature',
+      type: 'Premium (Manicure/Pedicure)',
+    },
+    {
+      value: 'Regular',
+      type: 'Manicure/Pedicure',
+    },
+    {
+      value: 'Aroma',
+      type: 'Manicure/Pedicure',
+    },
+    {
+      value: 'Chocolate',
+      type: 'Manicure/Pedicure',
+    },
+    {
+      value: 'Crystal',
+      type: 'Manicure/Pedicure',
+    },
+    {
+      value: 'Pedilogix',
+      type: 'Manicure/Pedicure',
+    },
+    {
+      value: 'Foot Reflexology',
+      type: 'Reflexology',
+    },
+    {
+      value: 'Hand Reflexology',
+      type: 'Reflexology',
+    },
+    {
+      value: 'Neck & Back Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Aroma Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Swedish Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Coco Butter Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Body Exfoliation & Pack',
+      type: 'Body Care',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Body Care',
+    },
+    {
+      value: 'Hand Reflexology',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Neck & Back Massage',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Aroma Massage',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Swedish Massage',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Coco Butter Massage',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Body Exfoliation & Pack',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Instant Package',
+    },
+    
+    {
+      value: 'Hand Reflexology',
+      type: 'Instant Package',
+    },
+    {
+      value: 'Neck & Back Massage',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Aroma Massage',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Swedish Massage',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Coco Butter Massage',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Body Exfoliation & Pack',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Premium Package',
+    },
+    
+    {
+      value: 'Body Steam Bath',
+      type: 'Makeup & Hairstyle',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Makeup & Hairstyle',
+    },
+    {
+      value: 'Body Steam Bath',
+      type: 'Makeup & Hairstyle',
     },
   ];
 
@@ -118,7 +368,7 @@ const Womens = () => {
               }}
             >
               <div className="pricing__plan__name">
-                <h2 className='text-2xl mb-10'>{category}</h2>
+                <h2 className='text-2xl mb-10 font-mono'>{category}</h2>
                 <h3 className='text-white font-serif'>{name}</h3>
               </div>
               <div className="pricing__plan__content">
@@ -151,10 +401,6 @@ const Womens = () => {
                     );
                   })}
                 </ul>
-                <div className="pricing__plan__content__actions">
-                  <span>Order Now</span>
-                  <img src={play} alt="Order Now" />
-                </div>
               </div>
             </motion.div>
           );
@@ -166,7 +412,7 @@ const Womens = () => {
 
 const Section = styled.section`
   min-height: 100vh;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   position: relative;
   overflow: hidden;
   .background {
@@ -179,13 +425,13 @@ const Section = styled.section`
     .bg2 {
       position: absolute;
       right: 0;
-      bottom: 5rem;
+      bottom: 50rem;
     }
   }
   .pricing__title {
-    margin: 6rem 10rem;
+    margin: 5rem 10rem;
     p {
-      color: black;
+      color: #dc1c1c;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
     }
@@ -203,13 +449,13 @@ const Section = styled.section`
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      &:nth-child(2) {
+      /* &:nth-child(2) {
         .pricing__plan__content {
-          padding: 0 5rem;
+          padding: 0rem;
           border-left: 0.2rem gold;
           border-right: 0.2rem gold;
         }
-      }
+      } */
       &__name {
         background-color: black;
         width: 15rem;
@@ -228,12 +474,6 @@ const Section = styled.section`
           color: #fff;
           display: flex;
           position: relative;
-          span {
-            position: absolute;
-            top: 1rem;
-            left: -0.9rem;
-            font-size: 1.3rem;
-          }
           p {
             font-size: 4rem;
             font-weight: bold;
@@ -244,14 +484,14 @@ const Section = styled.section`
         &__features {
           list-style-type: none;
           text-align: center;
-          color: black;
+          font-weight: 500;
+          color: gold;
           display: flex;
           flex-direction: column;
-          gap: 0.6rem;
+          gap: 0.1rem;
           .line {
             text-decoration: line-through;
           }
-          margin-bottom: 2rem;
         }
         &__actions {
           display: flex;
@@ -267,11 +507,12 @@ const Section = styled.section`
       }
     }
   }
+
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     padding: 1rem;
     background-color: var(--secondary-color);
     .pricing__title {
-      margin: 0;
+      margin: 1rem;
       padding: 0 2rem;
       text-align: center;
       h2 {
@@ -283,23 +524,32 @@ const Section = styled.section`
     }
     .pricing {
       grid-template-columns: 1fr;
-      padding: 1rem;
-      gap: 4rem;
+      padding: 1.5rem;
+      gap: -100rem;
       &__plan {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1.3rem;
         &__name {
-          height: 10rem;
-          width: 10rem;
+          height: 12rem;
+          width: 12rem;
           h2 {
+            font-size: 1.3rem;
+            color: gold;
+          }
+          h3 {
             font-size: 1.5rem;
           }
           &__price {
             p {
-              font-size: 3rem;
+              font-size: 1rem;
             }
+          }
+        }
+        &__content {
+          &__features {
+            color: white;
           }
         }
         &:nth-child(2) {
