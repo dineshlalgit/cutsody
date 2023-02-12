@@ -54,15 +54,15 @@ const Womens = () => {
       name: 'Body Care',
     },
     {
-      category: 'BrideGroom',
+      category: 'Groom Package',
       name: 'Instant Package',
     },
     {
-      category: 'BrideGroom',
+      category: 'Groom Package',
       name: 'Premium Package',
     },
     {
-      category: 'BrideGroom',
+      category: 'Groom Package',
       name: 'Makeup & Hairstyle',
     },
   ];
@@ -138,11 +138,11 @@ const Womens = () => {
     },
     {
       value: 'Anti Dandruff',
-      type: 'Hair Spa',
+      type: 'Hair Care',
     },
     {
       value: 'Anti Hairfall',
-      type: 'Hair Spa',
+      type: 'Hair Care',
     },
     {
       value: 'Smoothing',
@@ -377,8 +377,9 @@ const Womens = () => {
         <img src={pricing1} alt="background" className="bg1" />
       </div>
       <div className="pricing__title">
-        <p>Find your pricing plan</p>
-        <h2>Finding the best salons in your city could be time consuming..</h2>
+        <p>Find your hair needs 😁</p>
+        <h2 className='font-Roboto_Condensed font-medium'>Finding the best salon service in your city could be time consuming... 😪</h2>
+        <h4 className='text-md text-pink-600 font-Roboto_Condensed font-bold'>We have you covered 🥳✌🏻 </h4>
       </div>
       <div className="pricing">
         {plans.map(({ name, category, price }, index) => {
@@ -406,85 +407,85 @@ const Womens = () => {
                         { 
                         name === 'Cuts' ? (
                           type === name ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Colour' ? (
                           type === 'Colour' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Hair Spa' ? (
                           type === 'Hair Spa' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Hair Care' ? (
                           type === 'Hair Care' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Hair Massage' ? (
                           type === 'Hair Massage' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Essential Facial' ? (
                           type === 'Essential Facial' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Luxury Facial' ? (
                           type === 'Luxury Facial' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Premium' ? (
                           type === 'Premium' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Regular' ? (
                           type === 'Regular' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Reflexology' ? (
                           type === 'Reflexology' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Body Care' ? (
                           type === 'Body Care' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Instant Package' ? (
                           type === 'Instant Package' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Premium Package' ? (
                           type === 'Premium Package' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Makeup & Hairstyle' ? (
                           type === 'Makeup & Hairstyle' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
                           ) : (
                             <li></li>
                           )
