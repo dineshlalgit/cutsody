@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import service1 from 'assets/men.png';
 import service2 from 'assets/women2.jpg';
 
-import Mens from 'pages/Mens';
-import Womens from 'pages/Womens';
+import Mens from 'components/Mens';
+import Womens from 'components/Womens';
 
 import play from 'assets/play.png';
 import Title from './Title';
-import { useScroll } from "components/useScroll";
-import { motion } from "framer-motion";
-import { servicesAnimations } from "animation";
+import { useScroll } from 'components/useScroll';
+import { motion } from 'framer-motion';
+import { servicesAnimations } from 'animation';
 
 function Services() {
   const [element, controls] = useScroll();
@@ -44,24 +44,26 @@ function Services() {
                 type: 'tween',
                 duration: 0.8,
               }}
-              >
-                  <div className="services__service__image">
-                    <img src={image} alt="Service" />  
-                  </div>
-                  <div className="services__service__title">
-                    <span>0{index + 1}</span>  
-                    <h2>{type}</h2>
-                  </div>
-                  <p className="services__service__description">{text}</p>
-                  <a href={page} target="_blank" rel='noreferrer'>
-                    <button className='bg-gradient-to-r from-red-600 to-amber-600 w-24 h-10 text-slate-50 rounded-md text-base font-mono hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600'>Menu</button>
-                  </a>
-              </motion.div>
-            )
-          })}
-    </div>
-  </Section>
-  ) 
+            >
+              <div className="services__service__image">
+                <img src={image} alt="Service" />
+              </div>
+              <div className="services__service__title">
+                <span>0{index + 1}</span>
+                <h2>{type}</h2>
+              </div>
+              <p className="services__service__description">{text}</p>
+              <a href={page} target="_blank" rel="noreferrer">
+                <button className="h-10 w-24 rounded-md bg-gradient-to-r from-red-600 to-amber-600 font-mono text-base text-slate-50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600">
+                  Menu
+                </button>
+              </a>
+            </motion.div>
+          );
+        })}
+      </div>
+    </Section>
+  );
 }
 
 const Section = styled.section`
