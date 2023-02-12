@@ -8,10 +8,9 @@ import Womens from 'pages/Womens';
 
 import play from 'assets/play.png';
 import Title from './Title';
-import { useScroll } from 'components/useScroll';
-import { motion } from 'framer-motion';
-import { servicesAnimations } from 'animation';
-import { Link } from 'react-router-dom';
+import { useScroll } from "components/useScroll";
+import { motion } from "framer-motion";
+import { servicesAnimations } from "animation";
 
 function Services() {
   const [element, controls] = useScroll();
@@ -45,28 +44,21 @@ function Services() {
                 type: 'tween',
                 duration: 0.8,
               }}
-            >
-              <a href={page} target="_blank" rel="noreferrer">
-                <div className="services__service__image">
-                  <img src={image} alt="Service" />
-                </div>
-              </a>
-              <div className="services__service__title">
-                <span>0{index + 1}</span>
-                <h2>{type}</h2>
-              </div>
-              <p className="services__service__description">{text}</p>
-              <a href="https://www.youtube.com" target="_blank">
-                <button className="bg-gradient-to-r from-red-500 to-yellow-500 w-24 h-10 rounded-sm text-white font-mono text-base hover:bg-gradient-to-r hover:from-yellow-500 hover:to-red-500">
-                  Menu's
-                </button>
-              </a>
-            </motion.div>
-          );
-        })}
-      </div>
-    </Section>
-  );
+              >
+                  <div className="services__service__image">
+                    <img src={image} alt="Service" />  
+                  </div>
+                  <div className="services__service__title">
+                    <span>0{index + 1}</span>  
+                    <h2>{type}</h2>
+                  </div>
+                  <p className="services__service__description">{text}</p>
+                  <img src={play} alt="Readmore" />
+              </motion.div>
+            )
+          })}
+    </div>
+  </Section>
 }
 
 const Section = styled.section`
