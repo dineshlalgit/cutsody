@@ -23,6 +23,10 @@ const Womens = () => {
       name: 'Expert',
       price: 77,
     },
+    {
+      name: 'Premium',
+      price: 109,
+    },
   ];
 
   const data = [
@@ -69,8 +73,8 @@ const Womens = () => {
   ];
 
   return (
-    <Section ref={element}>
-      <Title value="pricing" />
+    <Section ref={element} id="womens">
+      <Title value="Women's" />
       <div className="background">
         <img src={pricing1} alt="background" className="bg1" />
         <img src={pricing2} alt="background" className="bg2" />

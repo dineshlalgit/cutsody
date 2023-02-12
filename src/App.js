@@ -4,6 +4,8 @@ import Footer from 'components/Footer';
 import Home from 'components/Home';
 import Milestones from 'components/Milestones';
 import Portfolio from 'components/Portfolio';
+import Mens from 'components/Mens'
+import Womens from 'components/Womens'
 import Pricing from 'components/Pricing';
 import ScrollToTop from 'components/ScrollToTop';
 import Services from 'components/Services';
@@ -22,6 +24,8 @@ function App() {
       <Milestones />
       {/* <Blog /> */}
       <Video />
+      <Mens />
+      <Womens />
       <Pricing />
       <Testimonials />
       <Skills />

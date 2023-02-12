@@ -20,13 +20,13 @@ function Services() {
       type: "Men's",
       text: 'Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled',
       image: service1,
-      page: '#Mens',
+      page: '#mens',
     },
     {
       type: "Women's",
       text: 'We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.',
       image: service2,
-      page: '#Womens',
+      page: '#womens',
     },
   ];
   return (
@@ -53,7 +53,7 @@ function Services() {
                 <h2>{type}</h2>
               </div>
               <p className="services__service__description">{text}</p>
-              <a href={page} target="_blank" rel="noreferrer">
+              <a href={page}>
                 <button className="h-10 w-24 rounded-md bg-gradient-to-r from-red-600 to-amber-600 font-mono text-base text-slate-50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600">
                   Menu
                 </button>
