@@ -20,13 +20,13 @@ function Services() {
       type: "Men's",
       text: 'Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled',
       image: service1,
-      page: '/Mens',
+      page: '#Mens',
     },
     {
       type: "Women's",
       text: 'We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.',
       image: service2,
-      page: '/Womens',
+      page: '#Womens',
     },
   ];
   return (
