@@ -10,24 +10,32 @@ const Womens = () => {
   const [element, controls] = useScroll();
   const plans = [
     {
-      category: 'Cut & Colour',
+      category: 'Cut & Style',
       name: 'Cuts',
     },
     {
       category: 'Cut & Colour',
-      name: 'Colour',
+      name: 'Style',
     },
     {
-      category: 'Healthy Hair',
-      name: 'Hair Spa',
+      category: 'Hair Colour',
+      name: 'Grey Coverage',
     },
     {
-      category: 'Healthy Hair',
-      name: 'Hair Care',
+      category: 'Hair Colour',
+      name: 'Creative Colouring',
     },
     {
-      category: 'Healthy Hair',
-      name: 'Hair Massage',
+      category: 'Straightening',
+      name: 'Straightening',
+    },
+    {
+      category: 'Hair Treatment',
+      name: 'Hair Treatment',
+    },
+    {
+      category: 'Hair Treatment',
+      name: 'Cysteine Keratin',
     },
     {
       category: 'Facial',
@@ -38,166 +46,256 @@ const Womens = () => {
       name: 'Luxury Facial',
     },
     {
-      category: 'Manicure/Pedicure',
-      name: 'Premium',
+      category: 'Lotus Facial',
+      name: 'Basic Facial',
+    },
+    {
+      category: 'Lotus Facial',
+      name: 'Innovative Facial',
+    },
+    {
+      category: 'Lotus Facial',
+      name: 'Facial & Spa',
     },
     {
       category: 'Manicure/Pedicure',
-      name: 'Regular',
+      name: 'Manicure & Pedicure',
     },
     {
-      category: 'Reflexology',
-      name: 'Reflexology',
+      category: 'Waxing & Threading',
+      name: 'Waxing',
+    },
+    {
+      category: 'Waxing & Threading',
+      name: 'Body Bright',
+    },
+    {
+      category: 'Waxing & Threading',
+      name: 'Threading',
+    },
+    {
+      category: 'Waxing & Threading',
+      name: 'Rica Wax',
     },
     {
       category: 'Body Care',
       name: 'Body Care',
     },
     {
-      category: 'BrideGroom',
+      category: 'Bridal Package',
       name: 'Instant Package',
     },
     {
-      category: 'BrideGroom',
+      category: 'Bridal Package',
       name: 'Premium Package',
     },
     {
-      category: 'BrideGroom',
-      name: 'Makeup & Hairstyle',
+      category: 'Bridal Package',
+      name: 'Mehendi',
+    },
+    {
+      category: 'Bridal Makeup',
+      name: 'Bridal Makeup',
+    },
+    {
+      category: "Bridal Makeup",
+      name: "Bride's Friend",
+    },
+    {
+      category: 'Party Makeup',
+      name: 'Party Makeup',
     },
   ];
 
   const data = [
     {
-      value: 'Hair Cut ~ Cut for Every Lifestyle',
+      value: 'Hair Trim ~ Basic',
       type: 'Cuts',
     },
     {
-      value: 'Hair Cut ~ Change of Style',
+      value: 'Hair Trim (Inclusive ~ Hair Wash, Conditioning, Blow Dry)',
       type: 'Cuts',
     },
     {
-      value: 'Hair Cut Executive',
+      value:
+        'Layered Cut (Inclusive ~ Hair Wash, Conditioning, Blow Dry & Styling)',
       type: 'Cuts',
     },
     {
-      value: 'Hair Wash & Basic Blow Dry',
+      value:
+        'Style Change (Inclusive ~ Hair Wash, Conditioning, Blow Dry & Styling)',
       type: 'Cuts',
     },
     {
-      value: 'Shave ~ As Smooth As Possible',
+      value: 'Fix Cut',
       type: 'Cuts',
     },
     {
-      value: 'Beard Designing ~ Look cool! Flaunt differently',
+      value: 'Hair Wash ~ Shampoo, Conditioning & Blow Dry',
       type: 'Cuts',
     },
     {
-      value: 'Kids Cut ~ Below 5 Yrs',
+      value: 'Kids Cut ~ Below 10 Yrs',
       type: 'Cuts',
     },
     {
-      value: 'Head Shave',
-      type: 'Cuts',
+      value: 'Express Glow ~ Hair Wash, Shampoo, Massage & Conditioning',
+      type: 'Style',
     },
     {
-      value: 'Grey Coverage ~ Ammonia/Ammonia free',
-      type: 'Colour',
+      value: 'Straight Shine',
+      type: 'Style',
     },
     {
-      value: 'Fashion Hair Colour ~ Ammonia/Ammonia free',
-      type: 'Colour',
+      value: 'Flat Iron/Tonging',
+      type: 'Style',
     },
     {
-      value: 'Streaking ~ Per Streak',
-      type: 'Colour',
+      value: 'Fashionable Hair Do"s',
+      type: 'Style',
     },
     {
-      value: 'Beard Colouring',
-      type: 'Colour',
+      value: 'Roller Set',
+      type: 'Style',
     },
     {
-      value: 'Moustache Colouring',
-      type: 'Colour',
+      value: 'Root Touch Up ~ Ammonia / Ammonia Free',
+      type: 'Grey Coverage',
     },
     {
-      value: 'Revitalizing ~ Dry & Frizzy Hair',
-      type: 'Hair Spa',
+      value: 'Global ~ Ammonia',
+      type: 'Grey Coverage',
     },
     {
-      value: 'Healthy Hair Spa ~ Damaged Hair',
-      type: 'Hair Spa',
+      value: 'Global ~ Ammonia Free',
+      type: 'Grey Coverage',
     },
     {
-      value: 'Colour Shine Spa ~ Colored Hair',
-      type: 'Hair Spa',
+      value: 'Fashion Colour ~ Ammonia',
+      type: 'Grey Coverage',
     },
     {
-      value: 'Hair Fiber Treatment',
-      type: 'Hair Spa',
+      value: 'Fashion Colour ~ Ammonia Free',
+      type: 'Grey Coverage',
     },
     {
-      value: 'Anti Dandruff',
-      type: 'Hair Spa',
+      value: 'High Lights ~ Per Streak',
+      type: 'Creative Colouring',
     },
     {
-      value: 'Anti Hairfall',
-      type: 'Hair Spa',
+      value: 'Block Colouring ~ Per Dock (S.M/L)',
+      type: 'Creative Colouring',
     },
     {
-      value: 'Smoothing',
-      type: 'Hair Care',
+      value: 'Global ~ Full Head Highlight',
+      type: 'Creative Colouring',
+    },
+    {
+      value: 'Creative Colouring - Balayage / Ombre',
+      type: 'Creative Colouring',
+    },
+    {
+      value: 'Smoothening',
+      type: 'Straightening',
     },
     {
       value: 'Straightening',
-      type: 'Hair Care',
+      type: 'Straightening',
     },
     {
-      value: 'Keratin',
-      type: 'Hair Care',
+      value: 'Retouch For Smooth Straight',
+      type: 'Straightening',
+    },
+    {
+      value: 'Twist & Twirls (Perming)',
+      type: 'Straightening',
+    },
+    {
+      value: 'Partial Straightening and Perming',
+      type: 'Straightening',
+    },
+    {
+      value: 'Anti Hairfall Treatment',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Anti Dandruff',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Hair Spa',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Dry Frizzy Hair ~ Revitalizing',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Damaged Hair ~ Repair Rejuvenate',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Chemically Treated Hair ~ Power Surge',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Hair Fibre Treatment',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Organic Hair Spa ~ Moroccan',
+      type: 'Hair Treatment',
+    },
+    {
+      value: 'Cysteine Master Kit',
+      type: 'Cysteine Keratin',
+    },
+    {
+      value: 'Remedy Protein Kit',
+      type: 'Cysteine Keratin',
+    },
+    {
+      value: 'Hair BTX',
+      type: 'Cysteine Keratin',
+    },
+    {
+      value: 'The One Master Kit',
+      type: 'Cysteine Keratin',
+    },
+    {
+      value: 'Fibre Treatment',
+      type: 'Cysteine Keratin',
+    },
+    {
+      value: 'Fibre Treatment ~ Colour',
+      type: 'Cysteine Keratin',
     },
     {
       value: 'Kerafusion',
-      type: 'Hair Care',
+      type: 'Cysteine Keratin',
     },
     {
-      value: 'Aroma Oil Massage ~ 30 mins',
-      type: 'Hair Massage',
-    },
-    {
-      value: 'Almond Oil Massage ~ 30 mins',
-      type: 'Hair Massage',
-    },
-    {
-      value: 'Olive Oil Massage ~ 30 mins',
-      type: 'Hair Massage',
-    },
-    {
-      value: 'Reflection Oil Massage ~ 30 mins',
-      type: 'Hair Massage',
-    },
-    {
-      value: 'Oxy Glow Beach ',
+      value: 'Oxy Glow Bleach',
       type: 'Essential Facial',
     },
     {
-      value: 'De Tan',
+      value: 'De-Tan',
       type: 'Essential Facial',
     },
     {
-      value: 'Regular Clean Up',
+      value: 'Regular Cleanup',
       type: 'Essential Facial',
     },
     {
-      value: 'Under Eye',
+      value: 'Regular Cleanup Acne',
       type: 'Essential Facial',
     },
     {
-      value: 'Regular Clean (Acne)',
+      value: 'Under Eye Treatment',
       type: 'Essential Facial',
     },
     {
-      value: 'Fruit Facial',
+      value: 'Fruit / Herbal Facial',
       type: 'Essential Facial',
     },
     {
@@ -205,7 +303,7 @@ const Womens = () => {
       type: 'Essential Facial',
     },
     {
-      value: 'Insta Fair Facial',
+      value: 'Insta - Fair Facial',
       type: 'Essential Facial',
     },
     {
@@ -213,15 +311,15 @@ const Womens = () => {
       type: 'Essential Facial',
     },
     {
+      value: 'Skin Whitening Facial',
+      type: 'Luxury Facial',
+    },
+    {
       value: 'Shahnaz Gold Facial',
       type: 'Luxury Facial',
     },
     {
       value: 'Shahnaz Diamond Facial',
-      type: 'Luxury Facial',
-    },
-    {
-      value: 'Skin Whitening Facial',
       type: 'Luxury Facial',
     },
     {
@@ -233,44 +331,322 @@ const Womens = () => {
       type: 'Luxury Facial',
     },
     {
-      value: 'ICECREAM - Regular',
-      type: 'Premium',
+      value: 'Cut Studio Signature Facial',
+      type: 'Luxury Facial',
     },
     {
-      value: 'ICECREAM - Premium',
-      type: 'Premium',
+      value: 'Basic Clean up ~ Dry Skin / Oily Skin',
+      type: 'Basic Facial',
     },
     {
-      value: 'ICECREAM - Signature',
-      type: 'Premium',
+      value: 'Basic Hydra Facial ~ Dry Skin',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'Basic Hydra Facial ~ Oily Skin',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'Basic Facial with De-Tan Mask',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'ACNEX ~ pimple & acne treatment',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'DIPIGMENTONE ~ removing pigmentation and other spots',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'GLOWDERMIE ~ Lonization Facial for enhanced skin glow',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'INSTAFAIR ~ melanin control and skin lightening',
+      type: 'Basic Facial',
+    },
+    {
+      value: 'GOLDSHEEN ~ Instant gold like lustering complexion',
+      type: 'Basic Facial',
+    },
+    {
+      value: '4-Layer Radiance Facial',
+      type: 'Innovative Facial',
+    },
+    {
+      value: '4-Layer Anti Ageing Facial',
+      type: 'Innovative Facial',
+    },
+    {
+      value: '4-Layer Skin Whitening Facial',
+      type: 'Innovative Facial',
+    },
+    {
+      value: 'Preservita Advanceed Anti Biemish Facial with papaya marmalade',
+      type: 'Innovative Facial',
+    },
+    {
+      value: 'Preservita Anti-Ageing Facial with Fruit marmalade',
+      type: 'Innovative Facial',
+    },
+    {
+      value:
+        'Preservita Advance skin Radiance facial with Vino Grapes marmalade',
+      type: 'Innovative Facial',
+    },
+    {
+      value: 'Preservita Sensitive skin Facial with pineapple marmalade',
+      type: 'Innovative Facial',
+    },
+    {
+      value: 'Preservita skin whitening Facial Kit Bearberry marmalade',
+      type: 'Innovative Facial',
+    },
+    {
+      value: 'Ultimo Pearl ~ Skin whitening Facial Treatment',
+      type: 'Facial & Spa',
+    },
+    {
+      value: 'Ultimo Gold ~ 24 Carate Gold Facial Treatment',
+      type: 'Facial & Spa',
+    },
+    {
+      value: 'Ultimo Platinum ~ Anti—Ageing Facial Treatment',
+      type: 'Facial & Spa',
+    },
+    {
+      value: 'Japanese Sakura Skin Whitening S Lightening Facial',
+      type: 'Facial & Spa',
+    },
+    {
+      value: 'Bulgarian Rose Glow a Brightening Facial',
+      type: 'Facial & Spa',
+    },
+    {
+      value: 'Brazilian Anti Ageing Facial',
+      type: 'Facial & Spa',
+    },
+    {
+      value: 'Nail Care',
+      type: 'Manicure & Pedicure',
     },
     {
       value: 'Regular',
-      type: 'Regular',
+      type: 'Manicure & Pedicure',
     },
     {
       value: 'Aroma',
-      type: 'Regular',
+      type: 'Manicure & Pedicure',
     },
     {
       value: 'Chocolate',
-      type: 'Regular',
+      type: 'Manicure & Pedicure',
     },
     {
       value: 'Crystal',
-      type: 'Regular',
+      type: 'Manicure & Pedicure',
     },
     {
       value: 'Pedilogix',
-      type: 'Regular',
+      type: 'Manicure & Pedicure',
     },
     {
-      value: 'Foot Reflexology',
-      type: 'Reflexology',
+      value: 'Citrus Luxury Pedicure',
+      type: 'Manicure & Pedicure',
     },
     {
-      value: 'Hand Reflexology',
-      type: 'Reflexology',
+      value: 'Citrus Luxury Manicure',
+      type: 'Manicure & Pedicure',
+    },
+    {
+      value: 'Crystal Spa Pediicure',
+      type: 'Manicure & Pedicure',
+    },
+    {
+      value: 'Crystai Spa Manicure',
+      type: 'Manicure & Pedicure',
+    },
+    {
+      value: 'Full Arms',
+      type: 'Waxing',
+    },
+    {
+      value: 'Full Legs',
+      type: 'Waxing',
+    },
+    {
+      value: 'Half Arms',
+      type: 'Waxing',
+    },
+    {
+      value: 'Half Legs',
+      type: 'Waxing',
+    },
+    {
+      value: 'Under Arms',
+      type: 'Waxing',
+    },
+    {
+      value: 'Stomach',
+      type: 'Waxing',
+    },
+    {
+      value: 'Full Back',
+      type: 'Waxing',
+    },
+    {
+      value: 'Bikini Line',
+      type: 'Waxing',
+    },
+    {
+      value: 'Bikini Wax',
+      type: 'Waxing',
+    },
+    {
+      value: 'Upper Lip',
+      type: 'Waxing',
+    },
+    {
+      value: 'Chin',
+      type: 'Waxing',
+    },
+    {
+      value: 'Sides',
+      type: 'Waxing',
+    },
+    {
+      value: 'Full Body Wax',
+      type: 'Waxing',
+    },
+    {
+      value: 'Face & Neck',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Full Arms',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Full Legs',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Half Arms',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Half Legs',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Under Arms',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Stomach',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Full Back',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Blouse Line',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Upper Lip',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Chin',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Full Body Bleach',
+      type: 'Body Bright',
+    },
+    {
+      value: 'Eyebrows',
+      type: 'Threading',
+    },
+    {
+      value: 'Upper Lip',
+      type: 'Threading',
+    },
+    {
+      value: 'Lower Lip',
+      type: 'Threading',
+    },
+    {
+      value: 'Forehead',
+      type: 'Threading',
+    },
+    {
+      value: 'Chin',
+      type: 'Threading',
+    },
+    {
+      value: 'Side and Jaw Line',
+      type: 'Threading',
+    },
+    {
+      value: 'Full Face',
+      type: 'Threading',
+    },
+    {
+      value: 'Full Arms',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Full Legs',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Half Arms',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Half Legs',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Under Arms',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Stomach',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Full Back',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Bikini Line',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Bikini Wax',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Upper Lip',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Chin',
+      type: 'Rica Wax',
+    },
+
+    {
+      value: 'Sides',
+      type: 'Rica Wax',
+    },
+    {
+      value: 'Full Body',
+      type: 'Rica Wax',
     },
     {
       value: 'Neck & Back Massage',
@@ -289,6 +665,18 @@ const Womens = () => {
       type: 'Body Care',
     },
     {
+      value: 'Aroma Oil Head Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Olive Oil Head Massage',
+      type: 'Body Care',
+    },
+    {
+      value: 'Almond Oil Head Massage',
+      type: 'Body Care',
+    },
+    {
       value: 'Body Exfoliation & Pack',
       type: 'Body Care',
     },
@@ -297,56 +685,24 @@ const Womens = () => {
       type: 'Body Care',
     },
     {
-      value: 'Hair Cut',
-      type: 'Instant Package',
-    },
-    {
-      value: 'Hair Spa',
-      type: 'Instant Package',
-    },
-    {
-      value: 'Shave Bleach ~ Face & Neck',
-      type: 'Instant Package',
-    },
-    {
-      value: 'Skin Whitening Facial',
-      type: 'Instant Package',
-    },
-    {
       value: 'Manicure',
       type: 'Instant Package',
     },
     {
       value: 'Pedicure',
       type: 'Instant Package',
-    },
-    {
-      value: 'Body Massage',
-      type: 'Instant Package',
-    },
-    {
-      value: 'Hair Cut',
-      type: 'Premium Package',
-    },
-    {
-      value: 'Hair Spa',
-      type: 'Premium Package',
-    },
-    {
-      value: 'Shave',
-      type: 'Premium Package',
     },
     {
       value: 'Bleach ~ Face & Neck',
-      type: 'Premium Package',
+      type: 'Instant Package',
     },
     {
-      value: 'Skin Lightening Facial',
-      type: 'Premium Package',
+      value: 'Essential Facial',
+      type: 'Instant Package',
     },
     {
-      value: 'Body Polish Treatment',
-      type: 'Premium Package',
+      value: 'Hair Spa',
+      type: 'Instant Package',
     },
     {
       value: 'Manicure',
@@ -357,16 +713,76 @@ const Womens = () => {
       type: 'Premium Package',
     },
     {
-      value: 'Krylon',
-      type: 'Makeup & Hairstyle',
+      value: 'Body Bleach',
+      type: 'Premium Package',
     },
     {
-      value: 'MAC',
-      type: 'Makeup & Hairstyle',
+      value: 'Luxurious Facial',
+      type: 'Premium Package',
     },
     {
-      value: 'Bridal Makeup Outdoor',
-      type: 'Makeup & Hairstyle',
+      value: 'Hair Spa',
+      type: 'Premium Package',
+    },
+    {
+      value: 'Full Arms',
+      type: 'Mehendi',
+    },
+    {
+      value: 'Half Arms',
+      type: 'Mehendi',
+    },
+    {
+      value: 'Half Legs',
+      type: 'Mehendi',
+    },
+    {
+      value: 'Arabic Bridal Mehendi',
+      type: 'Mehendi',
+    },
+    {
+      value: 'Bridal Package',
+      type: 'Mehendi',
+    },
+    {
+      value: 'Makeup',
+      type: 'Bridal Makeup',
+    },
+    {
+      value: 'MAC Makeup',
+      type: 'Bridal Makeup',
+    },
+    {
+      value: 'Bridal Makeup - Outdoor',
+      type: 'Bridal Makeup',
+    },
+    {
+      value: 'Makeup',
+      type: "Bride's Friend",
+    },
+    {
+      value: 'Hair Do',
+      type: "Bride's Friend",
+    },
+    {
+      value: 'Saree Drape',
+      type: "Bride's Friend",
+    },
+    {
+      value: 'Krylon Makeup',
+      type: 'Party Makeup',
+    },
+    {
+      value: 'MAC Makeup',
+      type: 'Party Makeup',
+    },
+    {
+      value: 'Krylon Makeup & Hairstyle',
+      type: 'Party Makeup',
+    },
+    {
+      value: 'MAC Makeup & Hairstyle',
+      type: 'Party Makeup',
     },
   ];
 
@@ -377,8 +793,14 @@ const Womens = () => {
         <img src={pricing1} alt="background" className="bg1" />
       </div>
       <div className="pricing__title">
-        <p>Find your pricing plan</p>
-        <h2>Finding the best salons in your city could be time consuming..</h2>
+        <p>Find your hair needs 😁</p>
+        <h2 className="font-Roboto_Condensed font-medium">
+          Finding the best salon service in your city could be time consuming...
+          😪
+        </h2>
+        <h4 className="text-md font-Roboto_Condensed font-bold text-pink-600">
+          We have you covered 🥳✌🏻{' '}
+        </h4>
       </div>
       <div className="pricing">
         {plans.map(({ name, category, price }, index) => {
@@ -395,101 +817,225 @@ const Womens = () => {
               }}
             >
               <div className="pricing__plan__name">
-                <h2 className='text-2xl mb-10 font-mono'>{category}</h2>
-                <h3 className='text-white font-serif'>{name}</h3>
+                <h2 className="mb-10 font-mono text-2xl">{category}</h2>
+                <h3 className="font-serif text-white">{name}</h3>
               </div>
               <div className="pricing__plan__content mb-14">
                 <ul className={`pricing__plan__content__features ${name}`}>
                   {data.map(({ value, type }, index2) => {
                     return (
                       <Fragment key={index2}>
-                        { 
-                        name === 'Cuts' ? (
+                        {name === 'Cuts' ? (
                           type === name ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Colour' ? (
-                          type === 'Colour' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                        ) : name === 'Style' ? (
+                          type === 'Style' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Hair Spa' ? (
-                          type === 'Hair Spa' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                        ) : name === 'Grey Coverage' ? (
+                          type === 'Grey Coverage' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Hair Care' ? (
-                          type === 'Hair Care' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                        ) : name === 'Creative Colouring' ? (
+                          type === 'Creative Colouring' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Hair Massage' ? (
-                          type === 'Hair Massage' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                        ) : name === 'Straightening' ? (
+                          type === 'Straightening' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Hair Treatment' ? (
+                          type === 'Hair Treatment' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Cysteine Keratin' ? (
+                          type === 'Cysteine Keratin' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Essential Facial' ? (
                           type === 'Essential Facial' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Luxury Facial' ? (
                           type === 'Luxury Facial' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Basic Facial' ? (
+                          type === 'Basic Facial' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Facial Treatment' ? (
+                          type === 'Facial Treatment' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Innovative Facial' ? (
+                          type === 'Innovative Facial' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Facial & Spa' ? (
+                          type === 'Facial & Spa' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Waxing' ? (
+                          type === 'Waxing' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Body Bright' ? (
+                          type === 'Body Bright' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Threading' ? (
+                          type === 'Threading' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Rica Wax' ? (
+                          type === 'Rica Wax' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Premium' ? (
                           type === 'Premium' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Regular' ? (
-                          type === 'Regular' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Reflexology' ? (
-                          type === 'Reflexology' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                        ) : name === 'Manicure & Pedicure' ? (
+                          type === 'Manicure & Pedicure' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Body Care' ? (
                           type === 'Body Care' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Instant Package' ? (
                           type === 'Instant Package' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
                         ) : name === 'Premium Package' ? (
                           type === 'Premium Package' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Makeup & Hairstyle' ? (
-                          type === 'Makeup & Hairstyle' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg'>{value}</li>
+                        ) : name === 'Mehendi' ? (
+                          type === 'Mehendi' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Something'
-                  }
+                        ) : name === 'Bridal Makeup' ? (
+                          type === 'Bridal Makeup' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === "Bride's Friend" ? (
+                          type === "Bride's Friend" ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : name === 'Party Makeup' ? (
+                          type === 'Party Makeup' ? (
+                            <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
+                              {value}
+                            </li>
+                          ) : (
+                            <li></li>
+                          )
+                        ) : (
+                          name === 'Something'
+                        )}
                       </Fragment>
                     );
                   })}
