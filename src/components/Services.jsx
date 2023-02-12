@@ -59,6 +59,7 @@ function Services() {
           })}
     </div>
   </Section>
+  )
 }
 
 const Section = styled.section`
