@@ -53,7 +53,9 @@ function Services() {
                     <h2>{type}</h2>
                   </div>
                   <p className="services__service__description">{text}</p>
-                  <img src={play} alt="Readmore" />
+                  <a href={page} target="_blank" rel='noreferrer'>
+                    <button className='bg-gradient-to-r from-red-600 to-amber-600 w-24 h-10 text-slate-50 rounded-md text-base font-mono hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600'>Menu</button>
+                  </a>
               </motion.div>
             )
           })}
