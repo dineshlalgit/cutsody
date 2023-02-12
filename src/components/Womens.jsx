@@ -808,8 +808,8 @@ const Womens = () => {
             <motion.div
               className="pricing__plan"
               key={index}
-              variants={pricingAnimation2}
-              animate={controls}
+              // variants={pricingAnimation2}
+              // animate={controls}
               transition={{
                 delay: 0.03,
                 type: 'tween',
