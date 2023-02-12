@@ -6,7 +6,7 @@ import Milestones from 'components/Milestones';
 import Portfolio from 'components/Portfolio';
 import Mens from 'components/Mens'
 import Womens from 'components/Womens'
-import Pricing from 'components/Pricing';
+// import Pricing from 'components/Pricing';
 import ScrollToTop from 'components/ScrollToTop';
 import Services from 'components/Services';
 import Skills from 'components/Skills';
@@ -26,7 +26,7 @@ function App() {
       <Video />
       <Mens />
       <Womens />
-      <Pricing />
+      {/* <Pricing /> */}
       <Testimonials />
       <Skills />
       <Contact />
