@@ -11,22 +11,22 @@ function Testimonials() {
   const [selected, setSelected] = useState(0);
   const testimonials = [
     {
-      designation: "SPA",
-      name: "Nikita",
+      designation: "Teacher",
+      name: "Tanushri Ramesh",
       review:
-      "Perfection is by far one of the best retreats around, professional in every aspect but friendly too. Michelle and her dedicated team will do their best to meet your needs and give you your ultimate treatment. Massages are a must and worth every penny. Highly worth a visit !"
+      "Had a great experience. The results are awesome . I have done keratin treatment which was done by monica a very good hairstylist . Love the place and ambiance."
     },
     {
-      designation: "Full Makeup",
-      name: "GLipika",
+      designation: "Local Guide",
+      name: "Tiwari Anuj",
       review:
-      "Perfection isn’t just any other salon. It’s a complete cut above the rest. Every visit is always a treat and you’re always made to feel special. Michelle never takes her customers for granted and she strives to always deliver something above and beyond ordinary expectations"
+      "One of best salon in the islands the barber's are very interactive too..you will be also served with coffee tea and food if you are having a time consuming process on your hair."
     },
     {
-      designation: "Skin",
-      name: "Nancy",
+      designation: "Model",
+      name: "Nargis Hussain",
       review:
-      "Perfection is by far one of the best retreats around, professional in every aspect but friendly too. Michelle and her dedicated team will do their best to meet your needs and give you your ultimate treatment. Massages are a must and worth every penny. Highly worth a visit !"
+      "The saloon is clean and comfortable. I got my services from the stylish name Srijana. She did my massage, facial and mani - pedi. Attendants were courteous, professional and thorough. I would go back and definitely recommend this saloon."
     },
   ];
   return (

@@ -22,7 +22,7 @@ function Skills() {
     },
     {
       name: "Cosmetic",
-      amount: 81,
+      amount: 86,
     },
     {
       name: "Salon",
