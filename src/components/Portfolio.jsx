@@ -27,10 +27,10 @@ function Portfolio() {
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-seven grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-eight grid-box"></motion.div>
     </div>
-    <div className="portfolio-more">
+    {/* <div className="portfolio-more">
         <span>Load More</span>
         <img src={loadmore} alt="Load More" />
-    </div>
+    </div> */}
   </Section>
   );
 }

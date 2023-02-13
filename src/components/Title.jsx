@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Title({ value }) {
   return ( 
   <Div>
-    <h1>{value}</h1>
+    <h1 className=''>{value}</h1>
   </Div>
   );
 }
@@ -16,7 +16,7 @@ h1 {
   transform: translateX(-30%) translateY(20vw) rotate(-90deg);
   font-size: 7rem;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: 400;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     display: none;

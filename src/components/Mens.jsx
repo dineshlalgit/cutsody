@@ -372,7 +372,7 @@ const Womens = () => {
 
   return (
     <Section ref={element} id="mens">
-      <Title value="Men's" />
+      <Title value="Men's" className="text-slate-50" />
       <div className="background">
         <img src={pricing1} alt="background" className="bg1" />
       </div>
@@ -505,6 +505,8 @@ const Womens = () => {
 };
 
 const Section = styled.section`
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   min-height: 100vh;
   padding: 5rem 1rem;
   position: relative;

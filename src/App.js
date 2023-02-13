@@ -14,7 +14,7 @@ const ScrollToTop = lazy(() => import('components/ScrollToTop'));
 const Services = lazy(() => import('components/Services'));
 const Skills = lazy(() => import('components/Skills'));
 const Testimonials = lazy(() => import('components/Testimonials'));
-const Video = lazy(() => import('components/Video'));
+// const Video = lazy(() => import('components/Video'));
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Portfolio />
         <Milestones />
         {/* <Blog /> */}
-        <Video />
+        {/* <Video /> */}
         <Mens />
         <Womens />
         {/* <Pricing /> */}
