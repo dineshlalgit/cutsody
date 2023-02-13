@@ -87,19 +87,19 @@ const Section = styled.section`
       align-items: flex-start;
       width: 60%;
       color: #fff;
-      gap: 1.2rem;
+      gap: 0.2rem;
       margin-top: 5rem;
       padding-left: 18rem;
       .title {
         h1 {
-          font-size: 5rem;
+          font-size: 4rem;
           line-height: 5.3rem;
         }
       }
       .subTitle {
         p {
           width: 70%;
-          margin-bottom: 2rem;
+          margin-bottom: 2.2rem;
         }
       }
     }

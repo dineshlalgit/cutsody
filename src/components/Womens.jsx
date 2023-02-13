@@ -66,22 +66,22 @@ const Womens = () => {
     },
     {
       category: 'Manicure/Pedicure',
-      name: 'Manicure & Pedicure',
+      name: 'Manicure/Pedicure',
     },
     {
-      category: 'Waxing & Threading',
+      category: 'Waxing/Threading',
       name: 'Waxing',
     },
     {
-      category: 'Waxing & Threading',
+      category: 'Waxing/Threading',
       name: 'Body Bright',
     },
     {
-      category: 'Waxing & Threading',
+      category: 'Waxing/Threading',
       name: 'Threading',
     },
     {
-      category: 'Waxing & Threading',
+      category: 'Waxing/Threading',
       name: 'Rica Wax',
     },
     {
@@ -436,43 +436,43 @@ const Womens = () => {
     },
     {
       value: 'Nail Care',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Regular',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Aroma',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Chocolate',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Crystal',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Pedilogix',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Citrus Luxury Pedicure',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Citrus Luxury Manicure',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Crystal Spa Pediicure',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Crystai Spa Manicure',
-      type: 'Manicure & Pedicure',
+      type: 'Manicure/Pedicure',
     },
     {
       value: 'Full Arms',
@@ -976,8 +976,8 @@ const Womens = () => {
                           ) : (
                             <li></li>
                           )
-                        ) : name === 'Manicure & Pedicure' ? (
-                          type === 'Manicure & Pedicure' ? (
+                        ) : name === 'Manicure/Pedicure' ? (
+                          type === 'Manicure/Pedicure' ? (
                             <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">
                               {value}
                             </li>

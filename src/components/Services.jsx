@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import service1 from 'assets/men.png';
 import service2 from 'assets/women2.jpg';
@@ -10,17 +10,26 @@ import { servicesAnimations } from 'animation';
 
 function Services() {
   const [element, controls] = useScroll();
+  const [loadMore1, setLoadMore1] = useState(false);
+  const [hideLoadMore1, setHideLoadMore1] = useState(true);
+  const [hideShowLess1, setHideShowLess1] = useState(false);
 
   const data = [
     {
       type: "Men's",
-      text: 'Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled',
+      text1:
+        "Step into our men's section and experience luxury grooming at its finest. With a commitment to quality and customer satisfaction, our skilled stylists provide a range of top-notch hair services tailored to your individual needs.",
+      text2:
+        'Be pampered and treated like royalty as we strive to enhance your appearance with 100% dedication and excellence. Your transformation begins here, at our salon where the customer is truly King.',
       image: service1,
       page: '#mens',
     },
     {
       type: "Women's",
-      text: 'We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.',
+      text1:
+        "Unleash your inner glamour at our women's salon section. Our experienced stylists are dedicated to providing the highest quality hair services, personalized to your unique beauty needs. Relax and feel pampered as we elevate your look with 100% dedication and excellence.",
+      text2:
+        'You are our top priority, and we treat you like the goddess you are. Indulge in a transformative salon experience at our customer-centric salon.',
       image: service2,
       page: '#womens',
     },
@@ -29,7 +38,7 @@ function Services() {
     <Section id="services" ref={element}>
       <Title value="services" />
       <div className="services">
-        {data.map(({ type, text, image, page }, index) => {
+        {data.map(({ type, text1, text2, text3, image, page }, index) => {
           return (
             <motion.div
               className="services__service"
@@ -48,9 +57,40 @@ function Services() {
                 <span>0{index + 1}</span>
                 <h2>{type}</h2>
               </div>
-              <p className="services__service__description text-lg font-Roboto_Condensed text-amber-600 hover:text-slate-900">{text}</p>
+              <p className="services__service__description font-Roboto_Condensed text-lg text-amber-600 hover:text-slate-900">
+                {text1}
+              </p>
+              {hideLoadMore1 && (
+                <p
+                  className="font-Nunito_Sans hover:font-semibold hover:text-green-500"
+                  onClick={() => {
+                    setLoadMore1(true);
+                    setHideLoadMore1(false);
+                    setHideShowLess1(true);
+                  }}
+                >
+                  Load More...
+                </p>
+              )}
+              {loadMore1 && (
+                <p className="services__service__description font-Roboto_Condensed text-lg text-amber-600 hover:text-slate-900">
+                  {text2}
+                </p>
+              )}
+              {hideShowLess1 && (
+                <p
+                  className='font-Nunito_Sans hover:font-semibold hover:text-red-500'
+                  onClick={() => {
+                    setLoadMore1(false);
+                    setHideLoadMore1(true);
+                    setHideShowLess1(false);
+                  }}
+                >
+                  Show Less...
+                </p>
+              )}
               <a href={page}>
-                <button className="h-10 w-24 mb-8 rounded-md bg-gradient-to-r from-red-600 to-amber-600 font-mono text-base text-slate-50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600">
+                <button className="mt-3 mb-8 h-10 w-24 rounded-md bg-gradient-to-r from-red-600 to-amber-600 font-mono text-base text-slate-50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600">
                   Menu
                 </button>
               </a>

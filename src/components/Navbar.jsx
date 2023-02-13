@@ -20,7 +20,7 @@ function Navbar() {
     >
       <div className="brand__container">
         <a href="#" className="brand">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className='-my-3' />
         </a>
         <div className="toggle">
           {isNavOpen ? (
