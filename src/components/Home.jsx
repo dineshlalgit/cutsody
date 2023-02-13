@@ -1,72 +1,74 @@
 import React from 'react';
-import styled from "styled-components";
-import home from "assets/home2.png";
-import play from "assets/play.png";
+import styled from 'styled-components';
+import home from 'assets/home2.png';
 import Navbar from './Navbar';
-import { motion } from "framer-motion";
-import { homeAnimation, homeInfoAnimation } from "animation";
+import { motion } from 'framer-motion';
+import { homeAnimation, homeInfoAnimation } from 'animation';
 
 function Home() {
   return (
     <Section id="home">
       <Navbar />
-      <motion.div className="home"
-      variants={homeAnimation}
-      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      <motion.div
+        className="home"
+        variants={homeAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: 'tween' }}
       >
         <div className="content">
           <div className="title">
             <h1>CUT STUDIO</h1>
-            
-          </div>  
+          </div>
           <div className="subTitle">
             <p>
-              At the Beauty Parlour, we believe in beauty with a conscience. 
-              We have created a salon that offers the highest quality hair 
+              At the Beauty Parlour, we believe in beauty with a conscience. We
+              have created a salon that offers the highest quality hair
               services.
             </p>
+            <a href="#services">
+              <button className="h-12 w-60 rounded-lg border-4">
+                Check Our Services
+              </button>
+            </a>
           </div>
-          <img src={play} alt="Play Button"  />
-          </div>  
+        </div>
       </motion.div>
 
-      <motion.div className="info"
-      variants={homeInfoAnimation}  
-      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+      <motion.div
+        className="info"
+        variants={homeInfoAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: 'tween' }}
       >
-          <div className="grid">
-            <div className="col">
-                <strong>Parlour</strong>
-                <p>CUT STUDIO</p>
-            </div>
-            <div className="col">
-                <strong>Email</strong>
-                <p>cutstudio@gmail.com</p>
-            </div> 
-            <div className="col">
-                <strong>Mobile</strong>
-                <p>+91 80018 18888</p>
-            </div> 
-            <div className="col">
-                <strong>Address</strong>
-                <p>Door No 57</p>
-                <p>Moulana Azad Road</p>
-                <p>Phoenix Bay, Port Blair - 744101</p>
-            </div> 
-            <div className="col">
-                <strong>Services</strong>
-                <p>Hair Cut</p>
-                <p>SPA</p>
-                <p>Facial</p>
-            </div> 
-            <div className="col">
-                <strong>Working Hours</strong>
-                <p>Monday to Sunday</p>
-                <p>08:00 AM to 09:00 PM</p>
-            </div> 
-            
-              
+        <div className="grid">
+          <div className="col">
+            <strong>Parlour</strong>
+            <p>CUT STUDIO</p>
           </div>
+          <div className="col">
+            <strong>Email</strong>
+            <p>cutstudio@gmail.com</p>
+          </div>
+          <div className="col">
+            <strong>Mobile</strong>
+            <p>+91 80018 18888</p>
+          </div>
+          <div className="col">
+            <strong>Address</strong>
+            <p>Door No 57</p>
+            <p>Moulana Azad Road</p>
+            <p>Phoenix Bay, Port Blair - 744101</p>
+          </div>
+          <div className="col">
+            <strong>Services</strong>
+            <p>Hair Cut</p>
+            <p>SPA</p>
+            <p>Facial</p>
+          </div>
+          <div className="col">
+            <strong>Working Hours</strong>
+            <p>Monday to Sunday</p>
+            <p>08:00 AM to 09:00 PM</p>
+          </div>
+        </div>
       </motion.div>
     </Section>
   );
@@ -77,7 +79,7 @@ const Section = styled.section`
   min-height: 100vh;
   background-size: cover;
   position: relative;
-  .home{
+  .home {
     height: 100%;
     .content {
       display: flex;
@@ -104,7 +106,7 @@ const Section = styled.section`
   }
   .info {
     position: absolute;
-    bottom: -6rem;
+    bottom: -4rem;
     right: 0;
     background-color: var(--secondary-color);
     padding: 4rem;
@@ -115,7 +117,7 @@ const Section = styled.section`
       color: #fff;
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media screen and (min-width: 280px) and (max-width: 1320px) {
     .home {
       .content {
         padding-left: 2rem;
@@ -138,4 +140,4 @@ const Section = styled.section`
   }
 `;
 
-export default Home
+export default Home;

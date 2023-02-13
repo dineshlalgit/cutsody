@@ -48,9 +48,9 @@ function Services() {
                 <span>0{index + 1}</span>
                 <h2>{type}</h2>
               </div>
-              <p className="services__service__description">{text}</p>
+              <p className="services__service__description text-lg font-Roboto_Condensed text-amber-600 hover:text-slate-900">{text}</p>
               <a href={page}>
-                <button className="h-10 w-24 rounded-md bg-gradient-to-r from-red-600 to-amber-600 font-mono text-base text-slate-50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600">
+                <button className="h-10 w-24 mb-8 rounded-md bg-gradient-to-r from-red-600 to-amber-600 font-mono text-base text-slate-50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-amber-600">
                   Menu
                 </button>
               </a>
@@ -70,7 +70,7 @@ const Section = styled.section`
     align-items: center;
     height: 100%;
     margin: 0 25rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
     gap: 10rem;
     &__service {
       padding: 1rem;
@@ -91,7 +91,6 @@ const Section = styled.section`
         }
       }
       &__description {
-        color: var(--primary-color);
         margin-bottom: 2rem;
       }
     }
