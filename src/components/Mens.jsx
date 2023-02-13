@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import styled from 'styled-components';
 import Title from './Title';
 import pricing1 from '../assets/pricing1.png';
@@ -8,6 +8,10 @@ import { pricingAnimation1 } from 'animation';
 
 const Womens = () => {
   const [element, controls] = useScroll();
+  const [showContent1, setShowContent1] = useState(false);
+  const [showContent2, setShowContent2] = useState(false);
+  const [showContent3, setShowContent3] = useState(false);
+
   const plans = [
     {
       category: 'Cut & Colour',
@@ -379,7 +383,9 @@ const Womens = () => {
       <div className="pricing__title">
         {/* <p>Find the need of your Manly Hair😁</p> */}
         {/* <h2 className='font-Roboto_Condensed font-medium'>Finding the best salon service in your city could be time consuming... 😪</h2> */}
-        <h2 className='text-md text-pink-600 font-Roboto_Condensed font-bold'>Men's Professional Service's</h2>
+        <h2 className="text-md font-Roboto_Condensed font-bold text-pink-600">
+          Men's Professional Service's
+        </h2>
       </div>
       <div className="pricing">
         {plans.map(({ name, category, price }, index) => {
@@ -395,107 +401,144 @@ const Womens = () => {
                 duration: 0.8,
               }}
             >
-              <div className="pricing__plan__name">
-                <h2 className='text-2xl mb-10 font-mono'>{category}</h2>
-                <h3 className='text-white font-serif'>{name}</h3>
+              <div
+                className="pricing__plan__name"
+                onClick={() => {
+                  setShowContent1(!showContent1);
+                  setShowContent2(!showContent2);
+                  setShowContent3(!showContent3);
+                }}
+              >
+                <h2 className="mb-10 font-mono text-2xl">{category}</h2>
+                <h3 className="font-serif text-white">{name}</h3>
               </div>
-              <div className="pricing__plan__content mb-14">
-                <ul className={`pricing__plan__content__features ${name}`}>
-                  {data.map(({ value, type }, index2) => {
-                    return (
-                      <Fragment key={index2}>
-                        { 
-                        name === 'Cuts' ? (
-                          type === name ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
+              { (
+                <div className="pricing__plan__content mb-14">
+                  <ul className={`pricing__plan__content__features ${name}`}>
+                    {data.map(({ value, type }, index2) => {
+                      return (
+                        <Fragment key={index2}>
+                          {name === 'Cuts' ? (
+                            type === name ? (
+                              showContent1 && <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Colour' ? (
+                            type === 'Colour' ? (
+                              showContent2 && <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Hair Spa' ? (
+                            type === 'Hair Spa' ? (
+                              showContent3 && <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Hair Care' ? (
+                            type === 'Hair Care' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Hair Massage' ? (
+                            type === 'Hair Massage' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Essential Facial' ? (
+                            type === 'Essential Facial' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Luxury Facial' ? (
+                            type === 'Luxury Facial' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Premium' ? (
+                            type === 'Premium' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Regular' ? (
+                            type === 'Regular' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Reflexology' ? (
+                            type === 'Reflexology' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Body Care' ? (
+                            type === 'Body Care' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Instant Package' ? (
+                            type === 'Instant Package' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Premium Package' ? (
+                            type === 'Premium Package' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
+                          ) : name === 'Makeup & Hairstyle' ? (
+                            type === 'Makeup & Hairstyle' ? (
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                {value}
+                              </li>
+                            ) : (
+                              <li></li>
+                            )
                           ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Colour' ? (
-                          type === 'Colour' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Hair Spa' ? (
-                          type === 'Hair Spa' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Hair Care' ? (
-                          type === 'Hair Care' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Hair Massage' ? (
-                          type === 'Hair Massage' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Essential Facial' ? (
-                          type === 'Essential Facial' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Luxury Facial' ? (
-                          type === 'Luxury Facial' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Premium' ? (
-                          type === 'Premium' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Regular' ? (
-                          type === 'Regular' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Reflexology' ? (
-                          type === 'Reflexology' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Body Care' ? (
-                          type === 'Body Care' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Instant Package' ? (
-                          type === 'Instant Package' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Premium Package' ? (
-                          type === 'Premium Package' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Makeup & Hairstyle' ? (
-                          type === 'Makeup & Hairstyle' ? (
-                            <li className='text-slate-900 py-0.5 font-Roboto_Condensed font-medium text-lg hover:text-amber-500 hover:font-semibold'>{value}</li>
-                          ) : (
-                            <li></li>
-                          )
-                        ) : name === 'Something'
-                  }
-                      </Fragment>
-                    );
-                  })}
-                </ul>
-              </div>
+                            name === 'Something'
+                          )}
+                        </Fragment>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
             </motion.div>
           );
         })}
@@ -505,8 +548,8 @@ const Womens = () => {
 };
 
 const Section = styled.section`
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   min-height: 100vh;
   padding: 1rem 1rem;
   position: relative;
