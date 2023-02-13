@@ -809,7 +809,7 @@ const Womens = () => {
               className="pricing__plan"
               key={index}
               // variants={pricingAnimation2}
-              // animate={controls}
+              // animate={controls} 
               transition={{
                 delay: 0.03,
                 type: 'tween',
