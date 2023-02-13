@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { testimonialsAnimations } from "animation";
+import Title from './Title';
 
 function Testimonials() {
   const [element, controls] = useScroll();
@@ -30,6 +31,7 @@ function Testimonials() {
   ];
   return (
     <Section ref={element}>
+      <Title value="Review's" />
       <div className="container">
         <motion.div className="testimonials"
         variants={testimonialsAnimations}
@@ -99,6 +101,7 @@ overflow: hidden;
 
 .container {
   min-height: 100vh;
+  min-width: 100vw;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;

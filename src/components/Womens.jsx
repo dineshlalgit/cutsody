@@ -1150,7 +1150,7 @@ const Section = styled.section`
 
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     padding: 1rem;
-    background-color: var(--secondary-color);
+    background-color: whitesmoke;
     .pricing__title {
       margin: 1rem;
       padding: 0 2rem;
