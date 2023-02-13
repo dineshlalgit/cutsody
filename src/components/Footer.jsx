@@ -19,6 +19,9 @@ function Footer() {
       }}
       >
         &copy; CUT STUDIO
+        <p>Designed by </p>
+        <a href="https://consultancy.nxtunicorns.com/" target="_blank" rel='noreferrer'>VYASN IT Consultancy</a>
+      
       </motion.span>
       <motion.div className="footer__social__icons"
       variants={footerTextAnimation}
@@ -29,7 +32,6 @@ function Footer() {
         duration: 0.8,
       }}  
       >
-        <a href="https://www.facebook.com/cutstudioandaman" target="_blank" rel='noreferrer'><BsFacebook /></a>
         <a href="https://www.instagram.com/cutstudioandamans" target="_blank" rel='noreferrer'><BsInstagram /></a>
       </motion.div>
       

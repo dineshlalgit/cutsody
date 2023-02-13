@@ -17,7 +17,7 @@ function Milestones() {
     {
       image: milestone1,
       data: "Client Served",
-      amount: "877",
+      amount: "5K+",
     },
     {
       image: milestone2,

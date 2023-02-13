@@ -20,9 +20,7 @@ function Home() {
           </div>
           <div className="subTitle">
             <p>
-              At the Beauty Parlour, we believe in beauty with a conscience. We
-              have created a salon that offers the highest quality hair
-              services.
+            Discover inner beauty and consciousness at Cut Studio, where self-love takes center stage.
             </p>
             <a href="#services">
               <button className="h-12 w-56 -my-4 rounded-lg border-4">
@@ -40,7 +38,7 @@ function Home() {
       >
         <div className="grid">
           <div className="col">
-            <strong>Parlour</strong>
+            <strong>Salon and Spa</strong>
             <p>CUT STUDIO</p>
           </div>
           <div className="col">
@@ -49,19 +47,20 @@ function Home() {
           </div>
           <div className="col">
             <strong>Mobile</strong>
-            <p>+91 80018 18888</p>
+            <p>Phoenix Bay - +91-8001818888</p>
+            <p>Goal Ghar - +91-9474218888</p>
           </div>
           <div className="col">
             <strong>Address</strong>
-            <p>Door No 57</p>
-            <p>Moulana Azad Road</p>
-            <p>Phoenix Bay, Port Blair - 744101</p>
+            <p><b>Goal Ghar</b></p>
+            <p>144, Jawaharlal Nehru Rd, DAG Colony, Goal Ghar, Port Blair, 744102</p>
+            <p><b>Phoenix Bay</b></p>
+            <p>Door No - 57, Moulana Azad Road, Phoenix Bay, Port Blair, 744101</p>
+            
           </div>
           <div className="col">
             <strong>Services</strong>
-            <p>Hair Cut</p>
-            <p>SPA</p>
-            <p>Facial</p>
+            <p>Unisex Men & Women Services</p>
           </div>
           <div className="col">
             <strong>Working Hours</strong>

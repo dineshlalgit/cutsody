@@ -29,20 +29,20 @@ function Contact() {
             <p>
               If you have any questions simply use the following contact details.
             </p>
-            <div>
-              <p>
-                <strong>Address:</strong> Door No 57 Moulana Azad Road, Phoenix Bay, Port Blair - 744101
-              </p>
-              <p>
-                <strong>Email:</strong>  cutstudio@gmail.com
-              </p>
+
+            <div className="col">
+              <strong>Mobile</strong>
+              <p>Phoenix Bay - +91-8001818888</p>
+              <p>Goal Ghar - +91-9474218888</p>
             </div>
+            <div className="col">
+            <strong>Address</strong>
+            <p><b>Goal Ghar</b></p>
+            <p>144, Jawaharlal Nehru Rd, DAG Colony, Goal Ghar, Port Blair, 744102</p>
+            <p><b>Phoenix Bay</b></p>
+            <p>Door No - 57, Moulana Azad Road, Phoenix Bay, Port Blair, 744101</p>
+            
           </div>
-          <div className="contact__data__form">
-            <input type="text" placeholder='name' />
-            <input type="email" placeholder='email' />
-            <textarea placeholder='message'></textarea>
-            <button>Send Message</button>
           </div>
         </div>
       </motion.div>
