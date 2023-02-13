@@ -803,15 +803,15 @@ const Womens = () => {
         </h4>
       </div>
       <div className="pricing">
-        {plans1.map(({ name, category, price }, index) => {
+        {plans1.map(({ name, category, price }, index4) => {
           return (
             <motion.div
               className="pricing__plan"
-              key={index}
-              // variants={pricingAnimation2}
-              // animate={controls} 
+              key={index4}
+              variants={pricingAnimation2}
+              animate={controls} 
               transition={{
-                delay: 0.03,
+                delay: 0.2,
                 type: 'tween',
                 duration: 0.8,
               }}
@@ -822,9 +822,9 @@ const Womens = () => {
               </div>
               <div className="pricing__plan__content mb-14">
                 <ul className={`pricing__plan__content__features ${name}`}>
-                  {data1.map(({ value, type }, index2) => {
+                  {data1.map(({ value, type }, index6) => {
                     return (
-                      <Fragment key={index2}>
+                      <Fragment key={index6}>
                         {name === 'Cuts' ? (
                           type === name ? (
                             <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-amber-500">

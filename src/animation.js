@@ -44,8 +44,8 @@ export const pricingAnimation1 = {
 };
 
 export const pricingAnimation2 = {
-    show: { y: 0, opacity: 1 },
-    hidden: { y: 200, opacity: 0 },
+    hidden: { x: 200, opacity: 0 },
+    show: { x: 0, opacity: 1 },
 };
 
 export const testimonialsAnimations = {
