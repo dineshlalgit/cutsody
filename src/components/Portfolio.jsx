@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import loadmore from "assets/loadmore.png";
+// import loadmore from "assets/loadmore.png";
 import portfolio3 from "assets/portfolio3.jpeg";
 import portfolio4 from "assets/portfolio4.jpeg";
 import portfolio5 from "assets/portfolio5.jpeg";
@@ -12,11 +12,13 @@ import portfolio10 from "assets/portfolio10.jpeg";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { portfolioAnimations } from "animation";
+import Title from './Title';
 
 function Portfolio() {
   const [element, controls] = useScroll();
   return (
   <Section id="portfolio" ref={element}>
+    <Title value="Glimpses" />
     <div className="grid">
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-one grid-box"></motion.div>
         <motion.div variants={portfolioAnimations} animate={controls} transition={{ delay: 0.03, type: "tween", duration: 0.8 }} className="child-two grid-box"></motion.div>
@@ -37,7 +39,8 @@ function Portfolio() {
 
 const Section = styled.section`
 min-height: 100vh;
-padding-bottom: 2rem;
+padding-bottom: 0rem;
+padding-top: 0rem;
 background-color: var(--secondary-color);
 .grid {
   display: grid;

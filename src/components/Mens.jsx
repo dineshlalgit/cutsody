@@ -377,9 +377,9 @@ const Womens = () => {
         <img src={pricing1} alt="background" className="bg1" />
       </div>
       <div className="pricing__title">
-        <p>Find the needs of your Many Hair😁</p>
+        <p>Find the need of your Manly Hair😁</p>
         <h2 className='font-Roboto_Condensed font-medium'>Finding the best salon service in your city could be time consuming... 😪</h2>
-        <h4 className='text-md text-pink-600 font-Roboto_Condensed font-bold'>We have you covered 🥳✌🏻 </h4>
+        <h3 className='text-md text-pink-600 font-Roboto_Condensed font-bold'>Don't Worry!, We have you covered 🥳✌🏻 </h3>
       </div>
       <div className="pricing">
         {plans.map(({ name, category, price }, index) => {
@@ -508,7 +508,7 @@ const Section = styled.section`
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   min-height: 100vh;
-  padding: 5rem 1rem;
+  padding: 1rem 1rem;
   position: relative;
   overflow: hidden;
   .background {

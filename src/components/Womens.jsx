@@ -1070,7 +1070,7 @@ const Section = styled.section`
     }
   }
   .pricing__title {
-    margin: 5rem 13rem;
+    margin: 3rem 13rem;
     p {
       color: #dc1c1c;
       text-transform: uppercase;
@@ -1084,7 +1084,8 @@ const Section = styled.section`
   .pricing {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 10rem;
+    margin: 5rem;
+    padding: 0 6rem;
     &__plan {
       display: flex;
       flex-direction: column;

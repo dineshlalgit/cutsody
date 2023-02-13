@@ -10,11 +10,11 @@ function Skills() {
   const skillsData = [
     {
       name: "Facial",
-      amount: 75,
+      amount: 92,
     },
     {
       name: "Skin",
-      amount: 75,
+      amount: 87,
     },
     {
       name: "SPA",
@@ -22,7 +22,7 @@ function Skills() {
     },
     {
       name: "Cosmetic",
-      amount: 75,
+      amount: 81,
     },
     {
       name: "Salon",
