@@ -5,12 +5,11 @@ import pricing1 from '../assets/pricing1.png';
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
 import { pricingAnimation1 } from 'animation';
+import Modal from 'react-modal';
 
 const Womens = () => {
   const [element, controls] = useScroll();
-  const [showContent1, setShowContent1] = useState(false);
-  const [showContent2, setShowContent2] = useState(false);
-  const [showContent3, setShowContent3] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   const plans = [
     {
@@ -402,17 +401,15 @@ const Womens = () => {
               }}
             >
               <div
-                className="pricing__plan__name"
+                className="pricing__plan__name mb-10"
                 onClick={() => {
-                  setShowContent1(!showContent1);
-                  setShowContent2(!showContent2);
-                  setShowContent3(!showContent3);
+                  setOpenModal(!openModal);
                 }}
               >
                 <h2 className="mb-10 font-mono text-2xl">{category}</h2>
                 <h3 className="font-serif text-white">{name}</h3>
               </div>
-              { (
+              {
                 <div className="pricing__plan__content mb-14">
                   <ul className={`pricing__plan__content__features ${name}`}>
                     {data.map(({ value, type }, index2) => {
@@ -420,15 +417,20 @@ const Womens = () => {
                         <Fragment key={index2}>
                           {name === 'Cuts' ? (
                             type === name ? (
-                              showContent1 && <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
-                                {value}
-                              </li>
+                              <Modal
+                                isOpen={openModal}
+                                onRequestClose={() => setOpenModal(false)}
+                              >
+                                <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                                  {value}
+                                </li>
+                              </Modal>
                             ) : (
                               <li></li>
                             )
                           ) : name === 'Colour' ? (
                             type === 'Colour' ? (
-                              showContent2 && <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
                                 {value}
                               </li>
                             ) : (
@@ -436,7 +438,7 @@ const Womens = () => {
                             )
                           ) : name === 'Hair Spa' ? (
                             type === 'Hair Spa' ? (
-                              showContent3 && <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
+                              <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
                                 {value}
                               </li>
                             ) : (
@@ -538,7 +540,7 @@ const Womens = () => {
                     })}
                   </ul>
                 </div>
-              )}
+              }
             </motion.div>
           );
         })}

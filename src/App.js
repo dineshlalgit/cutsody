@@ -8,6 +8,7 @@ const Footer = lazy(() => import('components/Footer'));
 const Home = lazy(() => import('components/Home'));
 const Milestones = lazy(() => import('components/Milestones'));
 const Portfolio = lazy(() => import('components/Portfolio'));
+const PlansDemo = lazy(() => import('components/PlansDemo'));
 const Mens = lazy(() => import('components/Mens'));
 const Womens = lazy(() => import('components/Womens'));
 const ScrollToTop = lazy(() => import('components/ScrollToTop'));
@@ -26,6 +27,7 @@ function App() {
         <Milestones />
         {/* <Blog /> */}
         {/* <Video /> */}
+        <PlansDemo />
         <Mens />
         <Womens />
         {/* <Pricing /> */}

@@ -1102,7 +1102,7 @@ const Section = styled.section`
         background-color: black;
         width: 15rem;
         height: 15rem;
-        border-radius: 10rem;
+        border-radius: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
