@@ -25,7 +25,7 @@ function Home() {
               services.
             </p>
             <a href="#services">
-              <button className="h-12 w-60 rounded-lg border-4">
+              <button className="h-12 w-56 -my-4 rounded-lg border-4">
                 Check Our Services
               </button>
             </a>

@@ -6,6 +6,13 @@ import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
 import { pricingAnimation2 } from 'animation';
 
+
+// The women's content fading out in screen sizes under 1321px width and showing blank page because of the men's menu content fading out animation 
+// when it goes out of view.
+// I solved it by decreasing the threshold amount to 0 in useScroll component file located in components directory inside src directory, 
+// previous it was {thresh = 0.1} now its {thresh = 0}.
+
+
 const Womens = () => {
   const [element, controls] = useScroll();
   const plans1 = [
