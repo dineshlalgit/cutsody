@@ -377,9 +377,9 @@ const Womens = () => {
         <img src={pricing1} alt="background" className="bg1" />
       </div>
       <div className="pricing__title">
-        <p>Find the need of your Manly Hair😁</p>
-        <h2 className='font-Roboto_Condensed font-medium'>Finding the best salon service in your city could be time consuming... 😪</h2>
-        <h3 className='text-md text-pink-600 font-Roboto_Condensed font-bold'>Don't Worry!, We have you covered 🥳✌🏻 </h3>
+        {/* <p>Find the need of your Manly Hair😁</p> */}
+        {/* <h2 className='font-Roboto_Condensed font-medium'>Finding the best salon service in your city could be time consuming... 😪</h2> */}
+        <h2 className='text-md text-pink-600 font-Roboto_Condensed font-bold'>Men's Professional Service's</h2>
       </div>
       <div className="pricing">
         {plans.map(({ name, category, price }, index) => {
@@ -529,6 +529,7 @@ const Section = styled.section`
     h2 {
       color: var(--primary-color);
       font-size: 2rem;
+      margin: auto;
     }
   }
   .pricing {
