@@ -4,6 +4,8 @@ import mens from '../data/mens';
 import MensCover from './MensCover';
 import Title from './Title';
 import { useScroll } from './useScroll';
+import { motion } from 'framer-motion';
+import { pricingAnimation1 } from 'animation';
 
 const mensData = mens.map((mens, index) => {
   return <MensCover key={index} {...mens} />;
@@ -27,9 +29,18 @@ const Mens = () => {
             We have you covered 🥳✌🏻{' '}
           </h4>
         </div>
-        <div className="p-auto mx-auto flex flex-wrap items-center justify-center gap-10 py-10 font-Roboto_Condensed text-lg font-normal">
+        <motion.div
+          variants={pricingAnimation1}
+          animate={controls}
+          transition={{
+            delay: 0.3,
+            type: 'tween',
+            duration: '0.8',
+          }}
+          className="p-auto mx-auto flex flex-wrap items-center justify-center gap-10 py-10 font-Roboto_Condensed text-lg font-normal"
+        >
           {mensData}
-        </div>
+        </motion.div>
       </Section>
     </>
   );
