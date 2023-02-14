@@ -28,13 +28,13 @@ const Womens = () => {
           <img src={pricing1} alt="background" className="bg1" />
         </div>
         <div className="pricing__title">
-          <p>Find your hair needs 😁</p>
+          <p>Women Professional Services</p>
           <h2 className="font-Roboto_Condensed font-medium">
             Finding the best salon service in your city could be time
             consuming... 😪
           </h2>
           <h4 className="text-md font-Roboto_Condensed font-bold text-pink-600">
-            We have you covered 🥳✌🏻{' '}
+            We got you covered 🥳✌🏻{' '}
           </h4>
         </div>
         <motion.div

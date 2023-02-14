@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { BsFacebook, BsTwitter, BsYoutube, BsBehance, BsInstagram } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { footerTextAnimation } from "animation";
@@ -19,8 +19,8 @@ function Footer() {
       }}
       >
         &copy; CUT STUDIO
-        <p>Designed by </p>
-        <a href="https://consultancy.nxtunicorns.com/" target="_blank" rel='noreferrer'>VYASN IT Consultancy</a>
+        <p>Designed by <a href="https://consultancy.nxtunicorns.com/" target="_blank" rel='noreferrer'>VYASN IT Consultancy</a></p>
+        
       
       </motion.span>
       <motion.div className="footer__social__icons"

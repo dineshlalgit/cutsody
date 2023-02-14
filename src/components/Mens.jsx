@@ -20,13 +20,13 @@ const Mens = () => {
         <Title value="Mens" />
         <div className="background"></div>
         <div className="pricing__title">
-          <p>Find your hair needs 😁</p>
+          <p>Men Professional Services</p>
           <h2 className="font-Roboto_Condensed font-medium">
             Finding the best salon service in your city could be time
             consuming... 😪
           </h2>
           <h4 className="text-md font-Roboto_Condensed font-bold text-pink-600">
-            We have you covered 🥳✌🏻{' '}
+            We got you covered 🥳✌🏻{' '}
           </h4>
         </div>
         <motion.div

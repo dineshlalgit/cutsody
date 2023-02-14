@@ -42,7 +42,7 @@ function Home() {
           </div>
           <div className="col">
             <strong>Email</strong>
-            <p>cutstudio@gmail.com</p>
+            <p>cutstudioandamans@gmail.com</p>
           </div>
           <div className="col">
             <strong>Mobile</strong>
