@@ -20,8 +20,8 @@ const MensCover = (props) => {
         />
       </div>
       <div className="m-auto flex flex-col justify-between p-1 py-3 text-center">
-        <p className="">{props.name}</p>
-        <p>{props.duration}</p>
+        <p className="text-slate-900 hover:font-semibold hover:text-slate-50">{props.name}</p>
+        <p className='text-slate-900 hover:font-semibold hover:text-slate-50'>{props.duration}</p>
         <p>{props.description}</p>
       </div>
       {/* <TravelPackagePage2 /> */}
