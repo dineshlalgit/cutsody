@@ -57,7 +57,7 @@ function Navbar() {
             <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="https://calendly.com/cutstudio/cutstudio-appointment">Appointment</a>
+            <a href="https://calendly.com/cutstudio/cutstudio-appointment" id="appointment">Appointment</a>
           </li>
         </ul>
       </div>
@@ -66,6 +66,10 @@ function Navbar() {
 }
 
 const Nav = styled(motion.nav)`
+  #appointment{
+    color:red;
+    font-weight:600;
+  }
   display: flex;
   justify-content: space-between;
   margin: 0 2rem;

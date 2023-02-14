@@ -62,12 +62,10 @@ function Skills() {
         </div>
         <div className="skills__content">
           <p className="title">
-            Beauty Services and Products
+            SPA and SALON
           </p>
           <p className="description">
-            To be a successful beautician, you should have a wide range 
-            of skills in beauty services, good communication skills, 
-            and the ability to advise clients on suitable hairstyles.
+          At Cut Studio, we take pride in offering skilled professionals for every service to ensure you receive the best possible experience.
           </p>
         </div>
       </div>
