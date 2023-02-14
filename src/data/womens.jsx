@@ -34,10 +34,8 @@ const mens = [
     num: 4,
     value1: 'Hair Trim (Basic)',
     value2: 'Hair Trim (Hair Wash, Conditioning, Dry)',
-    value3:
-      'Layered Cut (Hair Wash, Conditioning etc)',
-    value4:
-      'Style Change (Hair Wash, Conditioning etc)',
+    value3: 'Layered Cut (Hair Wash, Conditioning etc)',
+    value4: 'Style Change (Hair Wash, Conditioning etc)',
     value5: 'Fix Cut',
     value6: 'Hair Wash (Shampoo, Conditioning etc)',
     value7: 'Kids Cut (Below 10 Yrs)',
