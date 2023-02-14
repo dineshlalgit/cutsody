@@ -8,6 +8,21 @@ import w7 from '../assets/w7.jpg';
 import w8 from '../assets/w8.jpg';
 import w9 from '../assets/w9.jpg';
 import w10 from '../assets/w10.jpg';
+import w11 from '../assets/w11.jpg';
+import w12 from '../assets/w12.jpg';
+import w13 from '../assets/w13.jpg';
+import w14 from '../assets/w14.jpg';
+import w15 from '../assets/w15.jpg';
+import w16 from '../assets/w16.jpg';
+import w17 from '../assets/w17.jpg';
+import w18 from '../assets/w18.jpg';
+import w19 from '../assets/w19.jpg';
+import w20 from '../assets/w20.jpg';
+import w21 from '../assets/w21.jpg';
+import w22 from '../assets/w22.jpg';
+import w23 from '../assets/w23.jpg';
+import w24 from '../assets/w24.jpg';
+
 
 
 const mens = [
@@ -150,8 +165,7 @@ const mens = [
   {
     id: 11,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/baratang.jpeg?alt=media&token=5db39ecb-733a-493a-a14d-8c088376791a',
-
+      w11,
     subCategoryName: 'Lotus Professional Facial',
     num: 7,
     value1: '',
@@ -167,8 +181,7 @@ const mens = [
   {
     id: 12,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w12,
     subCategoryName: 'Facial & Spa',
     num: 6,
     value1: '',
@@ -181,8 +194,7 @@ const mens = [
   { // completed no need to change
     id: 13,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w13,
     subCategoryName: 'Manicure/Pedicure',
     num: 6,
     value1: 'Nail Care',
@@ -199,8 +211,7 @@ const mens = [
   {
     id: 14,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w14,
     subCategoryName: 'Waxing (Classic/Chocolate)',
     num: 6,
     value1: '',
@@ -220,8 +231,7 @@ const mens = [
   {
     id: 15,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w15,
     subCategoryName: 'Body Bright (Bleach/De Tan)',
     num: 6,
     value1: '',
@@ -240,8 +250,7 @@ const mens = [
   {
     id: 16,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w16,
     subCategoryName: 'Threading',
     num: 6,
     value1: '',
@@ -255,8 +264,7 @@ const mens = [
   {
     id: 17,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w17,
     subCategoryName: 'Rica Wax',
     num: 6,
     value1: '',
@@ -276,8 +284,7 @@ const mens = [
   {
     id: 18,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w18,
     subCategoryName: 'Body Care',
     num: 6,
     value1: '',
@@ -293,8 +300,7 @@ const mens = [
   {
     id: 19,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w19,
     subCategoryName: 'Instant Bridal Package',
     num: 6,
     value1: '',
@@ -305,8 +311,7 @@ const mens = [
   {
     id: 20,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w20,
     subCategoryName: 'Premium Bridal Package',
     num: 6,
     value1: '',
@@ -318,8 +323,7 @@ const mens = [
   {
     id: 21,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w21,
     subCategoryName: 'Bridal Mehendi',
     num: 6,
     value1: '',
@@ -331,8 +335,7 @@ const mens = [
   {
     id: 22,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w22,
     subCategoryName: 'Bridal Makeup',
     num: 6,
     value1: '',
@@ -342,8 +345,7 @@ const mens = [
   {
     id: 23,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w23,
     subCategoryName: "Friend Of Bride",
     num: 6,
     value1: '',
@@ -353,8 +355,7 @@ const mens = [
   {
     id: 24,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
+      w24,
     subCategoryName: 'Party Flake Up',
     num: 6,
     value1: '',
