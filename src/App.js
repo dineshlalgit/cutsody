@@ -27,7 +27,7 @@ function App() {
         <Milestones />
         {/* <Blog /> */}
         {/* <Video /> */}
-        <PlansDemo />
+        {/* <PlansDemo /> */}
         <Mens />
         <Womens />
         {/* <Pricing /> */}

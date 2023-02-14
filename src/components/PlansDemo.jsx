@@ -1,5 +1,5 @@
 import React from 'react';
-import plansDemo from '../data/plansdemo';
+import plansDemo from '../data/mens';
 import Demo from './Demo';
 
 const plansDemoData = plansDemo.map((plansDemo, index) => {
