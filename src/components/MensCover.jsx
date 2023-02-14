@@ -15,14 +15,17 @@ const MensCover = (props) => {
       >
         <LazyLoadImage
           src={props.imageLink}
-          alt={props.name}
+          alt={props.subCategoryName}
           className="transition:origin-center transition:duration-1000 flex h-60 w-80 rounded-md shadow-lg shadow-black drop-shadow-2xl transition-transform hover:scale-110 hover:ease-in-out"
         />
       </div>
       <div className="m-auto flex flex-col justify-between p-1 py-3 text-center">
-        <p className="text-slate-900 hover:font-semibold hover:text-slate-50">{props.name}</p>
-        <p className='text-slate-900 hover:font-semibold hover:text-slate-50'>{props.duration}</p>
-        <p>{props.description}</p>
+        <pName className="font-semibold text-slate-50 hover:text-xl hover:text-slate-900">
+          {props.category}
+        </pName>
+        <pName className="font-semibold text-slate-50 hover:text-xl hover:text-slate-900">
+          {props.subCategoryName}
+        </pName>
       </div>
       {/* <TravelPackagePage2 /> */}
 
@@ -33,23 +36,23 @@ const MensCover = (props) => {
         className="" // modal-content w-auto h-auto
       >
         <div className="my-10 flex h-auto w-auto flex-col bg-slate-50 font-Nunito_Sans shadow-2xl shadow-slate-200">
-          <div className="mx-auto">
-            <span className="text-3xl font-semibold text-slate-900">
-              Category Details
-            </span>
-          </div>
           <div className="mx-4 flex flex-row justify-between py-3">
-            <span className="text- text-2xl font-semibold text-black">
-              {props.name}
+            <span className="py-2 text-2xl font-semibold text-slate-900">
+              Details
             </span>
             <button
-              className="h-10 border-2 border-solid px-2 font-Nunito_Sans text-2xl font-medium text-slate-400 hover:text-slate-800"
+              className="h-10 border-2 border-solid px-2 font-Nunito_Sans text-xl font-medium text-slate-400 hover:text-slate-800"
               onClick={() => setOpenMensMenuDetails(false)}
             >
               X
             </button>
           </div>
-          <div className="py-2">
+          <div className="mx-auto mb-5">
+            <span className="mx-auto font-mono text-5xl font-semibold text-black xs:text-2xl">
+              {props.subCategoryName}
+            </span>
+          </div>
+          <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
             <span className="text-base text-slate-700">{props.value1}</span>
             {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-52 sm:w-auto'
@@ -57,7 +60,7 @@ const MensCover = (props) => {
               alt='.'
             /> */}
           </div>
-          <div className="py-3">
+          <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
             <span className="text-base text-slate-700">{props.value2}</span>
             {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -65,7 +68,7 @@ const MensCover = (props) => {
               alt='.'
             /> */}
           </div>
-          <div className="py-3">
+          <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
             <span className="text-base text-slate-700">{props.value3}</span>
             {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -73,7 +76,7 @@ const MensCover = (props) => {
               alt='.'
             /> */}
           </div>
-          <div className="py-3">
+          <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
             <span className="text-base text-slate-700">{props.value4}</span>
             {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -82,7 +85,7 @@ const MensCover = (props) => {
             /> */}
           </div>
           {props.value5 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value5}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -94,7 +97,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value6 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value6}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -106,7 +109,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value7 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value7}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -118,7 +121,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value8 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value8}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -130,7 +133,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value9 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value9}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -142,7 +145,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value10 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value10}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -154,7 +157,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value11 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value11}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -166,7 +169,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value12 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value12}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -178,7 +181,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value13 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value13}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -190,7 +193,7 @@ const MensCover = (props) => {
             <div></div>
           )}
           {props.value14 ? (
-            <div className="py-3">
+            <div className="mx-auto py-3 font-Roboto_Condensed text-lg text-slate-700">
               <span className="text-base text-slate-700">{props.value14}</span>
               {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
