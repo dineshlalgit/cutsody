@@ -15,9 +15,7 @@ function Home() {
         transition={{ delay: 0.3, duration: 0.6, type: 'tween' }}
       >
         <div className="content">
-          <div className="title">
-            <h1>CUT STUDIO</h1>
-          </div>
+        
           <div className="subTitle">
             <p>
             Discover inner beauty and consciousness at Cut Studio, where self-love takes center stage.
@@ -26,6 +24,7 @@ function Home() {
               <button className="h-12 w-56 -my-4 rounded-lg border-4">
                 Check Our Services
               </button>
+
             </a>
           </div>
         </div>
@@ -49,14 +48,6 @@ function Home() {
             <strong>Mobile</strong>
             <p>Phoenix Bay - +91-8001818888</p>
             <p>Goal Ghar - +91-9474218888</p>
-          </div>
-          <div className="col">
-            <strong>Address</strong>
-            <p><b>Goal Ghar</b></p>
-            <p>144, Jawaharlal Nehru Rd, DAG Colony, Goal Ghar, Port Blair, 744102</p>
-            <p><b>Phoenix Bay</b></p>
-            <p>Door No - 57, Moulana Azad Road, Phoenix Bay, Port Blair, 744101</p>
-            
           </div>
           <div className="col">
             <strong>Services</strong>
