@@ -243,7 +243,7 @@ const mens = [
     value6: 'DAY 6:  Depart From Port Blair',
   },
   {
-    id: 5,
+    id: 12,
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
@@ -264,7 +264,28 @@ const mens = [
     value6: 'DAY 6:  Depart From Port Blair',
   },
   {
-    id: 5,
+    id: 13,
+    imageLink:
+      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
+
+    name: 'Magical Havelock with Neil',
+    duration: '5 Nights / 6 Days',
+    num: 6,
+    description: 'Port Blair – 2 Nights , Havelock – 2 Night , Neil – 1 Night',
+    value1:
+      'DAY 1:  Arrive Port Blair: Check in to Hotel, After Lunch Proceed to Corbyn Cove beach. Evening We visit Cellular Jail for the Light & Sound Show',
+    value2:
+      'DAY 2:  Port Blair to Havelock by Speed Boat: After Breakfast proceed to Havelock by Private Ferry. Drop to your Resort, visit Radha Nagar Beach. Overnight stay at Havelock.',
+    value3:
+      'DAY 3:  Local Havelock: Day is free for optional water Activity: Scuba /Snorkeling -Trip to Elephant beach Snorkeling / High Sea Fishing (own Cost).',
+    value4:
+      'DAY 4:  Havelock to Neil by Speed Boat:After Breakfast we proceed to Neil Island,Evening Visit Bharatpur&Sitapur Beaches. Late Evening Enjoy Sunset at Laxmanpur Beach.',
+    value5:
+      'DAY 5:  Neil to Port Blair by Speed Boat: After breakfast proceed to Port Blair by Speed Boat. Evening visit City market for shopping and collection of Souvenirs.',
+    value6: 'DAY 6:  Depart From Port Blair',
+  },
+  {
+    id: 14,
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
