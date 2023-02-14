@@ -27,7 +27,7 @@ const Mens = () => {
             We have you covered 🥳✌🏻{' '}
           </h4>
         </div>
-        <div className="p-auto mx-40 flex flex-wrap items-center justify-center gap-10 py-10 font-Roboto_Condensed text-lg font-normal">
+        <div className="p-auto mx-auto flex flex-wrap items-center justify-center gap-10 py-10 font-Roboto_Condensed text-lg font-normal">
           {mensData}
         </div>
       </Section>

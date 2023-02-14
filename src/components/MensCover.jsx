@@ -6,17 +6,17 @@ const MensCover = (props) => {
   const [openMensMenuDetails, setOpenMensMenuDetails] = useState(false);
 
   return (
-    <div className="m-2 flex w-60 flex-col p-2 py-3">
+    <div className="mx-10 flex w-80 flex-col p-2 py-3">
       <div
         onClick={() => {
           setOpenMensMenuDetails(!openMensMenuDetails);
         }}
-        className="max-w-60 items:center justify-center"
+        className="max-w-80 items:center justify-center"
       >
         <LazyLoadImage
           src={props.imageLink}
           alt={props.name}
-          className="transition:origin-center transition:duration-1000 flex h-60 w-60 rounded-md shadow-lg shadow-black drop-shadow-2xl transition-transform hover:scale-110 hover:ease-in-out"
+          className="transition:origin-center transition:duration-1000 flex h-60 w-80 rounded-md shadow-lg shadow-black drop-shadow-2xl transition-transform hover:scale-110 hover:ease-in-out"
         />
       </div>
       <div className="m-auto flex flex-col justify-between p-1 py-3 text-center">

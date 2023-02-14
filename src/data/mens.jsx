@@ -62,6 +62,7 @@ const mens = [
     value3: '',
     value4: '',
     value5: '',
+    value6: '',
   },
   {
     id: 5,
