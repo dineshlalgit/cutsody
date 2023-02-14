@@ -14,7 +14,7 @@ position: relative;
 h1 {
   position: absolute;
   transform: translateX(-30%) translateY(20vw) rotate(-90deg);
-  font-size: 7rem;
+  font-size: 3rem;
   text-transform: uppercase;
   color: var(--primary-color);
   font-weight: 400;

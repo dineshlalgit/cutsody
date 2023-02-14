@@ -40,7 +40,7 @@ function Footer() {
 }
 
 const Foot = styled(motion.footer)`
-background-color: var(--primary-color);
+background-color: #0000FF;
 color: #fff;
 display: flex;
 justify-content: space-between;
