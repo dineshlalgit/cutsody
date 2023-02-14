@@ -7,7 +7,7 @@ const mensData = mens.map((mens, index) => {
 });
 
 const Mens = () => {
-  return <div>{mensData}</div>;
+  return <div className='flex flex-wrap items-center justify-center mx-auto p-auto font-normal text-lg font-Nunito_Sans py-10'>{mensData}</div>;
 };
 
 export default Mens;

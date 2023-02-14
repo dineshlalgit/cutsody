@@ -6,17 +6,17 @@ const MensCover = (props) => {
   const [openMensMenuDetails, setOpenMensMenuDetails] = useState(false);
 
   return (
-    <div className='m-2 py-3 p-2 flex flex-col w-88'>
+    <div className='m-2 py-3 p-2 flex flex-col w-96'>
       <div
         onClick={() => {
           setOpenMensMenuDetails(!openMensMenuDetails);
         }}
-        className='max-w-80 items:center'
+        className='max-w-96 items:center justify-center'
       >
         <LazyLoadImage
           src={props.imageLink}
           alt={props.name}
-          className='flex rounded-md w-88 h-64 drop-shadow-2xl shadow-black shadow-lg transition:origin-center hover:ease-in-out hover:scale-110 transition:duration-1000 transition-transform'
+          className='flex rounded-md w-96 h-60 drop-shadow-2xl shadow-black shadow-lg transition:origin-center hover:ease-in-out hover:scale-110 transition:duration-1000 transition-transform'
         />
       </div>
       <div className='flex flex-col justify-between m-auto py-3 p-1 text-center'>
@@ -56,76 +56,76 @@ const MensCover = (props) => {
           </div>
           <div className='py-2'>
             <span className='text-slate-700 text-base'>
-              {props.fullDescription1}
+              {props.value1}
             </span>
-            <LazyLoadImage
+            {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-52 sm:w-auto'
               src={props.imageLink1 ? props.imageLink1 : '-'}
               alt='.'
-            />
+            /> */}
           </div>
           <div className='py-3'>
             <span className='text-slate-700 text-base'>
-              {props.fullDescription2}
+              {props.value2}
             </span>
-            <LazyLoadImage
+            {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
               src={props.imageLink2 ? props.imageLink2 : '-'}
               alt='.'
-            />
+            /> */}
           </div>
           <div className='py-3'>
             <span className='text-slate-700 text-base'>
-              {props.fullDescription3}
+              {props.value3}
             </span>
-            <LazyLoadImage
+            {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
               src={props.imageLink3 ? props.imageLink3 : '-'}
               alt='.'
-            />
+            /> */}
           </div>
           <div className='py-3'>
             <span className='text-slate-700 text-base'>
-              {props.fullDescription4}
+              {props.value4}
             </span>
-            <LazyLoadImage
+            {/* <LazyLoadImage
               className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
               src={props.imageLink4 ? props.imageLink4 : '-'}
               alt='.'
-            />
+            /> */}
           </div>
-          {props.fullDescription5 ? (
+          {props.value5 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription5}
+                {props.value5}
               </span>
-              <LazyLoadImage
+              {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
                 src={props.imageLink5 ? props.imageLink5 : '-'}
                 alt='.'
-              />
+              /> */}
             </div>
           ) : (
             <div></div>
           )}
-          {props.fullDescription6 ? (
+          {props.value6 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription6}
+                {props.value6}
               </span>
-              <LazyLoadImage
+              {/* <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
                 src={props.imageLink6 ? props.imageLink6 : '-'}
                 alt='.'
-              />
+              /> */}
             </div>
           ) : (
             <div></div>
           )}
-          {props.fullDescription7 ? (
+          {props.value7 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription7}
+                {props.value7}
               </span>
               <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -136,10 +136,10 @@ const MensCover = (props) => {
           ) : (
             <div></div>
           )}
-          {props.fullDescription8 ? (
+          {props.value8 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription8}
+                {props.value8}
               </span>
               <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -150,10 +150,10 @@ const MensCover = (props) => {
           ) : (
             <div></div>
           )}
-          {props.fullDescription9 ? (
+          {props.value9 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription9}
+                {props.value9}
               </span>
               <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -164,10 +164,10 @@ const MensCover = (props) => {
           ) : (
             <div></div>
           )}
-          {props.fullDescription10 ? (
+          {props.value10 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription10}
+                {props.value10}
               </span>
               <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
@@ -178,14 +178,56 @@ const MensCover = (props) => {
           ) : (
             <div></div>
           )}
-          {props.fullDescription11 ? (
+          {props.value11 ? (
             <div className='py-3'>
               <span className='text-slate-700 text-base'>
-                {props.fullDescription11}
+                {props.value11}
               </span>
               <LazyLoadImage
                 className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
                 src={props.imageLink11 ? props.imageLink11 : '-'}
+                alt='.'
+              />
+            </div>
+          ) : (
+            <div></div>
+          )}
+          {props.value12 ? (
+            <div className='py-3'>
+              <span className='text-slate-700 text-base'>
+                {props.value12}
+              </span>
+              <LazyLoadImage
+                className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
+                src={props.imageLink12 ? props.imageLink12 : '-'}
+                alt='.'
+              />
+            </div>
+          ) : (
+            <div></div>
+          )}
+          {props.value13 ? (
+            <div className='py-3'>
+              <span className='text-slate-700 text-base'>
+                {props.value13}
+              </span>
+              <LazyLoadImage
+                className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
+                src={props.imageLink13 ? props.imageLink13 : '-'}
+                alt='.'
+              />
+            </div>
+          ) : (
+            <div></div>
+          )}
+          {props.value14 ? (
+            <div className='py-3'>
+              <span className='text-slate-700 text-base'>
+                {props.value14}
+              </span>
+              <LazyLoadImage
+                className='h-80 w-1/3 lg:w-5/12 airbnbml:w-2/3 airbnbml:mx-auto sm:h-40'
+                src={props.imageLink14 ? props.imageLink14 : '-'}
                 alt='.'
               />
             </div>
