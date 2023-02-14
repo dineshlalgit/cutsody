@@ -401,11 +401,7 @@ const Womens = () => {
               }}
             >
               <div
-                className="pricing__plan__name mb-10"
-                onClick={() => {
-                  setOpenModal(!openModal);
-                }}
-              >
+                className="pricing__plan__name">
                 <h2 className="mb-10 font-mono text-2xl">{category}</h2>
                 <h3 className="font-serif text-white">{name}</h3>
               </div>
@@ -417,14 +413,9 @@ const Womens = () => {
                         <Fragment key={index2}>
                           {name === 'Cuts' ? (
                             type === name ? (
-                              <Modal
-                                isOpen={openModal}
-                                onRequestClose={() => setOpenModal(false)}
-                              >
                                 <li className="py-0.5 font-Roboto_Condensed text-lg font-medium text-slate-900 hover:font-semibold hover:text-slate-50">
                                   {value}
                                 </li>
-                              </Modal>
                             ) : (
                               <li></li>
                             )
