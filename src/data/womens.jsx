@@ -1,11 +1,21 @@
+import w1 from '../assets/w1.jpg';
+import w2 from '../assets/w2.jpg';
+import w3 from '../assets/w3.jpg';
+import w4 from '../assets/w4.jpg';
+import w5 from '../assets/w5.jpg';
+import w6 from '../assets/w6.jpg';
+import w7 from '../assets/w7.jpg';
+import w8 from '../assets/w8.jpg';
+import w9 from '../assets/w9.jpg';
+import w10 from '../assets/w10.jpg';
+
+
 const mens = [
   {// completed no need to change
     id: 1,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/fir-starter-3d346.appspot.com/o/images%2Fhavelock.jpg?alt=media&token=06a37606-99e8-4cb6-a8d6-2780030e1f9',
-
-    category: 'Cut & Style',
-    subCategoryName: 'Cuts',
+      w1,
+    subCategoryName: 'Hair Cut',
     num: 4,
     value1: 'Hair Trim ~ Basic',
     value2: 'Hair Trim (Inclusive ~ Hair Wash, Conditioning, Blow Dry)',
@@ -20,10 +30,8 @@ const mens = [
   {// completed no need to change
     id: 2,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknight.jpeg?alt=media&token=18277cbb-d3d5-490b-a93c-0dbab8c4edb6',
-
-    category: 'Cut & Style',
-    subCategoryName: 'Style',
+      w2,
+    subCategoryName: 'Hair Style',
     num: 5,
     value1: 'Express Glow ~ Hair Wash, Shampoo, Massage & Conditioning',
     value2: 'Straight Shine',
@@ -34,10 +42,8 @@ const mens = [
   {// completed no need to change
     id: 3,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelockelephant.jpeg?alt=media&token=b445f6ae-2b07-4fd7-af0f-8c67dec77360',
-
-    category: 'Hair Colour',
-    subCategoryName: 'Grey Coverage',
+      w3,
+    subCategoryName: 'Grey Hair Color Coverage',
     num: 5,
     value1: 'Root Touch Up ~ Ammonia / Ammonia Free',
     value2: 'Global ~ Ammonia',
@@ -48,10 +54,8 @@ const mens = [
   {// completed no need to change
     id: 4,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/niel.jpeg?alt=media&token=d42468a9-e844-40dd-91dc-bf4c04b598a4',
-
-    category: 'Hair Colour',
-    subCategoryName: 'Creative Colouring',
+      w4,
+    subCategoryName: 'Creative Hair Colouring',
     value1: 'High Lights ~ Per Streak',
     value2: 'Anti Hairfall',
     value3: 'Block Colouring ~ Per Dock (S.M/L)',
@@ -61,9 +65,7 @@ const mens = [
   {// completed no need to change
     id: 5,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
-
-    category: 'Straightening',
+      w5,
     subCategoryName: 'Straightening',
     value1: 'Smoothening',
     value2: 'Straightening',
@@ -74,9 +76,7 @@ const mens = [
   {// completed no need to change
     id: 6,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelocksingle.jpeg?alt=media&token=36bb5381-e237-4851-a360-67f8183ea206',
-
-    category: 'Hair Treatment',
+      w6,
     subCategoryName: 'Hair Treatment',
     num: 6,
     value1: 'Anti Hairfall Treatment',
@@ -91,10 +91,8 @@ const mens = [
   {
     id: 7,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/cellujail.jpeg?alt=media&token=2683c32e-8d4f-4cb7-890a-20785d6b3c76',
-
-    category: 'Hair Treatment',
-    subCategoryName: 'Cysteine Keratin',
+      w7,
+    subCategoryName: 'Cysteine Hair Keratin Treatment',
     num: 7,
     value1: '',
     value2: '',
@@ -107,9 +105,7 @@ const mens = [
   {
     id: 8,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/rose.jpeg?alt=media&token=9cfb5eb4-d7e8-42db-918c-e32e90c12dd6',
-
-    category: 'Facial',
+      w8,
     subCategoryName: 'Essential Facial',
     num: 8,
     value1: '',
@@ -125,9 +121,7 @@ const mens = [
   {
     id: 9,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/9db1c41c9f1d915be537194acaab76f2.png?alt=media&token=5bd9d13b-dc80-447e-8c2a-328dfe010ed2',
-
-    category: 'Facial',
+      w9,
     subCategoryName: 'Luxury Facial',
     num: 4,
     value1: '',
@@ -140,9 +134,7 @@ const mens = [
   {
     id: 10,
     imageLink:
-      'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/smith.jpg?alt=media&token=7c41620f-4743-4a25-830a-478cbd2de25b',
-
-    category: 'Lotus Facial',
+      w10,
     subCategoryName: 'Basic Facial',
     num: 10,
     value1: '',
@@ -160,8 +152,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/baratang.jpeg?alt=media&token=5db39ecb-733a-493a-a14d-8c088376791a',
 
-    category: 'Lotus Facial',
-    subCategoryName: 'Innovative Facial',
+    subCategoryName: 'Lotus Professional Facial',
     num: 7,
     value1: '',
     value2: '',
@@ -178,7 +169,6 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Lotus Facial',
     subCategoryName: 'Facial & Spa',
     num: 6,
     value1: '',
@@ -193,7 +183,6 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Manicure/Pedicure',
     subCategoryName: 'Manicure/Pedicure',
     num: 6,
     value1: 'Nail Care',
@@ -212,8 +201,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Waxing/Threading',
-    subCategoryName: 'Waxing',
+    subCategoryName: 'Waxing (Classic/Chocolate)',
     num: 6,
     value1: '',
     value2: '',
@@ -234,8 +222,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Waxing/Threading',
-    subCategoryName: 'Body Bright',
+    subCategoryName: 'Body Bright (Bleach/De Tan)',
     num: 6,
     value1: '',
     value2: '',
@@ -255,7 +242,6 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Waxing/Threading',
     subCategoryName: 'Threading',
     num: 6,
     value1: '',
@@ -271,7 +257,6 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Waxing/Threading',
     subCategoryName: 'Rica Wax',
     num: 6,
     value1: '',
@@ -293,7 +278,6 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Body Care',
     subCategoryName: 'Body Care',
     num: 6,
     value1: '',
@@ -311,8 +295,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Bridal Package',
-    subCategoryName: 'Instant Package',
+    subCategoryName: 'Instant Bridal Package',
     num: 6,
     value1: '',
     value2: '',
@@ -324,8 +307,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Bridal Package',
-    subCategoryName: 'Premium Package',
+    subCategoryName: 'Premium Bridal Package',
     num: 6,
     value1: '',
     value2: '',
@@ -338,8 +320,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Bridal Package',
-    subCategoryName: 'Mehendi',
+    subCategoryName: 'Bridal Mehendi',
     num: 6,
     value1: '',
     value2: '',
@@ -352,7 +333,6 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Bridal Makeup',
     subCategoryName: 'Bridal Makeup',
     num: 6,
     value1: '',
@@ -364,8 +344,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Bridal Makeup',
-    subCategoryName: "Bride's Friend",
+    subCategoryName: "Friend Of Bride",
     num: 6,
     value1: '',
     value2: '',
@@ -376,8 +355,7 @@ const mens = [
     imageLink:
       'https://firebasestorage.googleapis.com/v0/b/tourismweb-3e2b8.appspot.com/o/havelooknile.jpeg?alt=media&token=418b02cb-b2cf-4ca1-bae8-9fc4bdb993e0',
 
-    category: 'Party Makeup',
-    subCategoryName: 'Party Makeup',
+    subCategoryName: 'Party Flake Up',
     num: 6,
     value1: '',
     value2: '',
