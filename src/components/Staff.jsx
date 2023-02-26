@@ -33,7 +33,7 @@ const Staff = () => {
             Best in Class Professional's in the Town are here! 🤩🥳
           </h2>
           <h4 className="text-md font-Roboto_Condensed font-bold text-pink-600">
-            Your Hair Need's ends here 😁✌🏻{' '}
+            Your Personal Care Need's ends here 😁✌🏻{' '}
           </h4>
         </div>
         <motion.div

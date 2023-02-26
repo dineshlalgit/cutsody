@@ -19,17 +19,17 @@ const staff = [
 
     staffName: 'Ningma',
 
-    expertise1: 'Hair Trim (Basic)',
-    expertise2: 'Hair Trim (Hair Wash, Conditioning, Dry)',
-    expertise3: 'Layered Cut (Hair Wash, Conditioning etc)',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
+    expertise3: 'MAKE UP ARTIST',
   },
   {
     id: 2,
     imageLink: staff2,
     staffName: 'Kunal',
 
-    expertise1: 'Express Glow (Hair Wash, Shampoo etc)',
-    expertise2: 'Straight Shine',
+    expertise1: 'UNISEX HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const staff = [
 
     staffName: 'Prince',
 
-    expertise1: 'Root Touch Up (Ammonia / Ammonia Free)',
+    expertise1: 'UNISEX HAIR STYLIST',
   },
   {
     id: 4,
@@ -45,9 +45,9 @@ const staff = [
 
     staffName: 'Sashi',
 
-    expertise1: 'High Lights (Per Streak)',
-    expertise2: 'Anti Hairfall',
-    expertise3: 'Block Colouring (Per Dock) (S/M/L)',
+    expertise1: 'UNISEX HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
+    expertise3: 'MASSAGE THERAPIST',
   },
   {
     id: 5,
@@ -55,9 +55,9 @@ const staff = [
 
     staffName: 'Pradhyum',
 
-    expertise1: 'Smoothening',
-    expertise2: 'Straightening',
-    expertise3: 'Retouch For Smooth Straight',
+    expertise1: 'UNISEX HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
+    expertise3: 'GROOM MAKE UP',
   },
   {
     id: 6,
@@ -65,8 +65,8 @@ const staff = [
 
     staffName: 'Royal',
 
-    expertise1: 'Anti Hairfall Treatment',
-    expertise2: 'Anti Dandruff',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const staff = [
 
     staffName: 'Upashna',
 
-    expertise1: 'Cysteine Master Kit',
+    expertise1: 'BEAUTICIAN',
   },
   {
     id: 8,
@@ -82,16 +82,16 @@ const staff = [
 
     staffName: 'Phurba',
 
-    expertise1: 'Oxy Glow Bleach',
-    expertise2: 'De-Tan',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'MASSAGE THERAPIST',
   },
   {
     id: 9,
     imageLink: staff9,
     staffName: 'Enosh',
 
-    expertise1: 'Skin Whitening Facial',
-    expertise2: 'Shahnaz Gold Facial',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
   },
   {
     id: 10,
@@ -99,9 +99,9 @@ const staff = [
 
     staffName: 'Surya',
 
-    expertise1: 'Basic Clean up (Dry Skin / Oily Skin)',
-    expertise2: 'Basic Hydra Facial (Dry Skin)',
-    expertise3: 'Basic Hydra Facial (Oily Skin)',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
+    expertise3: 'MASSAGE THERAPIST',
   },
   {
     id: 11,
@@ -109,9 +109,9 @@ const staff = [
 
     staffName: 'Srijana',
 
-    expertise1: '4-Layer Radiance Facial',
-    expertise2: '4-Layer Anti Ageing Facial',
-    expertise3: '4-Layer Skin Whitening Facial',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
+    expertise3: 'MASSAGE THERAPIST',
   },
 
   {
@@ -120,7 +120,7 @@ const staff = [
 
     staffName: 'Reema',
 
-    expertise1: 'Ultimo Pearl',
+    expertise1: 'BEAUTICIAN',
   },
   {
     id: 13,
@@ -128,8 +128,8 @@ const staff = [
 
     staffName: 'Sajal',
 
-    expertise1: 'Nail Care',
-    expertise2: 'Regular',
+    expertise1: 'HAIR STYLIST',
+    expertise2: 'BEAUTICIAN',
   },
 ];
 export default staff;
