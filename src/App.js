@@ -10,7 +10,8 @@ const Milestones = lazy(() => import('components/Milestones'));
 const Portfolio = lazy(() => import('components/Portfolio'));
 const Mens = lazy(() => import('components/Mens'));
 const Womens = lazy(() => import('components/Womens'));
-const Staff = lazy(() => import('components/Staff'));
+const Phoneix_Staff = lazy(() => import('components/Phoneix_Staff'));
+const Goalghar_Staff = lazy(() => import('components/Goalghar_Staff'));
 const ScrollToTop = lazy(() => import('components/ScrollToTop'));
 const Services = lazy(() => import('components/Services'));
 const Skills = lazy(() => import('components/Skills'));
@@ -32,7 +33,8 @@ function App() {
         <Womens />
         {/* <Pricing /> */}
         <Testimonials />
-        <Staff />
+        <Phoneix_Staff />
+        <Goalghar_Staff />
         <Skills />
         <Contact />
         <Footer />

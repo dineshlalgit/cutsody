@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Modal from 'react-modal';
 
-const WomensCover = (props) => {
+const Goalghar_StaffCover = (props) => {
   const [openWomensMenuDetails, setOpenWomensMenuDetails] = useState(false);
 
   return (
@@ -221,4 +221,4 @@ const WomensCover = (props) => {
   );
 };
 
-export default WomensCover;
+export default Goalghar_StaffCover;

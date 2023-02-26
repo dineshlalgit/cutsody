@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import staff from '../data/staff';
-import StaffCover from './StaffCover';
+import staff from '../data/goalghar-staff';
+import StaffCover from './Goalghar_StaffCover';
 import Title from './Title';
 import pricing1 from '../assets/pricing1.png';
 import { motion } from 'framer-motion';
@@ -23,19 +23,14 @@ const Staff = () => {
   return (
     <>
       <Section ref={element} id="staff">
-        <Title value="Our Professional's" />
         <div className="background">
           <img src={pricing1} alt="background" className="bg1" />
         </div>
-        <div className="pricing__title">
-          <p>Meet our Professional Hair Stylists & Beautician's</p>
-          <h2 className="font-Roboto_Condensed font-medium">
-            Best in Class Professional's in the Town are here! 🤩🥳
-          </h2>
-          <h4 className="text-md font-Roboto_Condensed font-bold text-pink-600">
-            Your Personal Care Need's ends here 😁✌🏻{' '}
-          </h4>
+
+        <div className='w-auto h-auto mx-auto text-center flex items-center justify-center'>
+          <h1 className='font-mono text-5xl font-bold text-blue-800'>Goalghar Branch</h1>
         </div>
+
         <motion.div
           variants={pricingAnimation2}
           animate={controls}
