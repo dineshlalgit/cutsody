@@ -38,7 +38,7 @@ const Staff = () => {
         </div>
 
         <div className='w-auto h-auto mx-auto text-center flex items-center justify-center'>
-          <h1 className='font-mono text-5xl font-bold text-blue-800'>Phoneix Bay Branch</h1>
+          <h1 className='font-mono text-5xl font-bold text-blue-800'>Phoenix Bay Branch</h1>
         </div>
 
         <motion.div

@@ -99,7 +99,8 @@ min-height: 100vh;
   }
   .skills {
     display: flex;
-    padding: 0 5rem 0 20rem;
+    padding: 0rem 5rem 0rem 20rem;
+    margin-top: -4rem;
     gap: 10rem;
     &__bars {
       transform: rotate(-90deg);
@@ -112,7 +113,7 @@ min-height: 100vh;
         display: flex;
         flex-direction: row-reverse;
 
-        gap: 1rem;
+        gap: 0rem;
 
         .container {
           display: flex;
