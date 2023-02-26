@@ -20,12 +20,12 @@ const Goalghar_StaffCover = (props) => {
         />
       </div>
       <div className="m-auto flex flex-col bg-rose-100 justify-between p-1 py-3 text-center border-2 border-solid border-b-amber-200/50 border-r-amber-200/50 border-l-amber-200/50 w-full h-auto rounded-b-lg">
-        <pName className="font-semibold hover:text-blue-500 hover:text-xl text-blue-900">
+        <p className="font-semibold hover:text-blue-500 hover:text-xl text-blue-900">
           {props.category}
-        </pName>
-        <pName className="font-semibold hover:text-blue-500 hover:text-xl text-blue-900">
+        </p>
+        <p className="font-semibold hover:text-blue-500 hover:text-xl text-blue-900">
           {props.staffName}
-        </pName>
+        </p>
       </div>
       {/* <TravelPackagePage2 /> */}
 
