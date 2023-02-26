@@ -22,7 +22,7 @@ const Staff = () => {
 
   return (
     <>
-      <Section ref={element} id="staff">
+      <Section ref={element} id="professionals">
         <Title value="Our Professional's" />
         <div className="background">
           <img src={pricing1} alt="background" className="bg1" />

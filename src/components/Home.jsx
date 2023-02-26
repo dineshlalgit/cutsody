@@ -15,16 +15,15 @@ function Home() {
         transition={{ delay: 0.3, duration: 0.6, type: 'tween' }}
       >
         <div className="content">
-        
           <div className="subTitle">
             <p>
-            Discover inner beauty and consciousness at Cut Studio, where self-love takes center stage.
+              Discover inner beauty and consciousness at Cut Studio, where
+              self-love takes center stage.
             </p>
             <a href="#services">
-              <button className="h-12 w-56 -my-4 rounded-lg border-4">
+              <button className="-my-4 h-12 w-56 rounded-lg border-4">
                 Check Our Services
               </button>
-
             </a>
           </div>
         </div>
@@ -53,10 +52,16 @@ function Home() {
             <strong>Services</strong>
             <p>Unisex Men & Women Services</p>
           </div>
-          <div className="col">
+          <div className="col-work">
             <strong>Working Hours</strong>
-            <p>Monday to Sunday</p>
-            <p>08:00 AM to 09:00 PM</p>
+            <div>
+              <p>Monday to Friday</p>
+              <p>10:00 AM to 08:00 PM</p>
+            </div>
+            <div>
+              <p>Saturday to Sunday</p>
+              <p>09:00 AM to 09:00 PM</p>
+            </div>
           </div>
         </div>
       </motion.div>

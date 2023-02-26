@@ -47,9 +47,9 @@ function Navbar() {
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
-          {/* <li>
-            <a href="#blog">Blog</a>
-          </li> */}
+          <li>
+            <a href="#professionals">Stylist's</a>
+          </li>
           <li>
             <a href="#skills">Skills</a>
           </li>
