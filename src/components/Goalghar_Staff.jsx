@@ -37,7 +37,7 @@ const Staff = () => {
           transition={{
             delay: 0.2,
             type: 'tween',
-            duration: 0.8,
+            duration: 0.4,
           }}
           className="p-auto mx-auto flex flex-wrap items-center justify-center gap-10 py-10 font-Roboto_Condensed text-lg font-normal"
         >
