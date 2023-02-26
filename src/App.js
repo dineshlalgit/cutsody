@@ -8,9 +8,9 @@ const Footer = lazy(() => import('components/Footer'));
 const Home = lazy(() => import('components/Home'));
 const Milestones = lazy(() => import('components/Milestones'));
 const Portfolio = lazy(() => import('components/Portfolio'));
-const PlansDemo = lazy(() => import('components/PlansDemo'));
 const Mens = lazy(() => import('components/Mens'));
 const Womens = lazy(() => import('components/Womens'));
+const Staff = lazy(() => import('components/Staff'));
 const ScrollToTop = lazy(() => import('components/ScrollToTop'));
 const Services = lazy(() => import('components/Services'));
 const Skills = lazy(() => import('components/Skills'));
@@ -32,6 +32,7 @@ function App() {
         <Womens />
         {/* <Pricing /> */}
         <Testimonials />
+        <Staff />
         <Skills />
         <Contact />
         <Footer />
