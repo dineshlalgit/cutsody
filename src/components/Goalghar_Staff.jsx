@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import staff from '../data/goalghar-staff';
 import StaffCover from './Goalghar_StaffCover';
-import Title from './Title';
+// import Title from './Title';
 import pricing1 from '../assets/pricing1.png';
 import { motion } from 'framer-motion';
 import { useScroll } from './useScroll';
