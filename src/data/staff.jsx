@@ -53,7 +53,7 @@ const staff = [
     id: 5,
     imageLink: staff5,
 
-    staffName: 'Pradhum',
+    staffName: 'Pradhyum',
 
     expertise1: 'Smoothening',
     expertise2: 'Straightening',

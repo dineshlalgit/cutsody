@@ -55,7 +55,7 @@ const Staff = () => {
 
 const Section = styled.section`
   min-height: 100vh;
-  padding: 3rem 0.5rem;
+  padding: 3rem 0rem;
   position: relative;
   overflow: hidden;
   .background {
@@ -90,7 +90,7 @@ const Section = styled.section`
       gap: 2rem;
       &:nth-child(2) {
         .pricing__plan__content {
-          padding: 0rem;
+          padding: 2rem;
           border-left: 0.2rem gold;
           border-right: 0.2rem gold;
         }
