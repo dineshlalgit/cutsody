@@ -1,31 +1,31 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 import Title from './Title';
-import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { skillsBarAnimation } from "animation";
+import { motion } from 'framer-motion';
+import { useScroll } from './useScroll';
+import { skillsBarAnimation } from 'animation';
 
 function Skills() {
   const [element, controls] = useScroll();
   const skillsData = [
     {
-      name: "Facial",
+      name: 'Facial',
       amount: 92,
     },
     {
-      name: "Skin",
+      name: 'Skin',
       amount: 87,
     },
     {
-      name: "SPA",
+      name: 'SPA',
       amount: 90,
     },
     {
-      name: "Cosmetic",
+      name: 'Cosmetic',
       amount: 86,
     },
     {
-      name: "Salon",
+      name: 'Salon',
       amount: 90,
     },
   ];
@@ -38,46 +38,45 @@ function Skills() {
       </div>
       <div className="skills">
         <div className="skills__bars">
-          {
-            skillsData.map(({ name, amount }) => {
-              return (
-                <motion.div className="skills__bars__bar" key={name}
+          {skillsData.map(({ name, amount }) => {
+            return (
+              <motion.div
+                className="skills__bars__bar"
+                key={name}
                 variants={skillsBarAnimation}
                 animate={controls}
                 transition={{
                   delay: 0.03,
-                  type: "tween",
+                  type: 'tween',
                   duration: 0.8,
                 }}
-                >
-                  <div className="container">
-                    <progress value={amount} max="100" />
-                    <span>{name}</span>
-                  </div>
-                  <h3>{amount}%</h3>
-                </motion.div>
-              );
-            })
-          }
+              >
+                <div className="container">
+                  <progress value={amount} max="100" />
+                  <span>{name}</span>
+                </div>
+                <h3>{amount}%</h3>
+              </motion.div>
+            );
+          })}
         </div>
         <div className="skills__content">
-          <p className="title">
-            SPA and SALON
-          </p>
+          <p className="title">SPA and SALON</p>
           <p className="description">
-          At Cut Studio, we take pride in offering skilled professionals for every service to ensure you receive the best possible experience.
+            At Cut Studio, we take pride in offering skilled professionals for
+            every service to ensure you receive the best possible experience.
           </p>
         </div>
       </div>
     </Section>
-  )
+  );
 }
 
 const Section = styled.section`
-min-height: 100vh;
-  height: 140vh;
+  min-height: 140vh;
+  height: 150vh;
   background-color: var(--secondary-color);
-  
+
   .sideTitle {
     h1 {
       color: #fff;
@@ -134,7 +133,7 @@ min-height: 100vh;
               border-radius: 20px;
             }
             &::-webkit-progress-value {
-              background-color: white; 
+              background-color: white;
               border-radius: 20px;
             }
           }
@@ -154,7 +153,7 @@ min-height: 100vh;
       z-index: 2;
     }
   }
-  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
     overflow-x: hidden;
     padding: 2rem 0;
     .background {
@@ -200,4 +199,4 @@ min-height: 100vh;
     }
   }
 `;
-export default Skills
+export default Skills;
