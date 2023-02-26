@@ -13,7 +13,7 @@ const MensCover = (props) => {
         }}
         className="max-w-80 items:center justify-center"
       >
-        <img
+        <LazyLoadImage
           src={props.imageLink}
           alt={props.subCategoryName}
           className="transition:origin-center transition:duration-1000 flex h-60 w-80 rounded-md shadow-lg shadow-black drop-shadow-2xl transition-transform hover:scale-110 hover:ease-in-out"
